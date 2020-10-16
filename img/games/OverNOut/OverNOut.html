@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/games/OverNOut/gallery/1.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/OverNOut/gallery/2.jpg">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/OverNOut/gallery/3.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/games/OverNOut/gallery/1.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/games/OverNOut/gallery/2.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="2" class="list-inline-item">
+            <img src="img/games/OverNOut/gallery/3.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Copy Cats - Over N' Out</h1>
+                <div class="page-body">
+                    <p id="25e6f404-3249-426f-ab97-0ba5bee7f578" class="">2020</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Submitted for GMTK Game Jam 2020.</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">You studied this job for months, and you're ready to go. The night sets in and the museum is yours. Finally you will snatch away the precious Egyptian "cat eye" gemstone. Only problem, you broke your leg and so you have to get your
+                        cat friend to do it for you. He's now in control and you have to communicate to him how to complete the heist using commands, referencing only the aesthetic pieces featured in the museum. </p>
+                    <p id="17f661a7-9a51-4b02-b13f-1d3f07763511" class=""><a href="https://franciscomurias.itch.io/copycats">Itch.io Page</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

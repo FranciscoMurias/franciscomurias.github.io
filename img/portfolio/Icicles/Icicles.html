@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/portfolio/Icicles/gallery/1.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/Icicles/gallery/2.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/Icicles/gallery/3.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/portfolio/Icicles/gallery/1.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/portfolio/Icicles/gallery/2.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="2" class="list-inline-item">
+            <img src="img/portfolio/Icicles/gallery/3.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Procedural Icicles</h1>
+                <p id="1af3bdc5-3e1e-4ede-8a0c-44752ac53366" class="">Developed as part of the artic outpost scene.</p>
+                <p id="1c8d96c4-f8ff-48da-b2e3-e5df04648c3d" class="">2019</p>
+                <p id="1ed0139c-adb7-4a1a-81a2-e0bcdae6e7b9" class="">
+                </p>
+                <p id="ad1ac131-f9dd-42bb-af92-d425069d540b" class="">Procedural Icicles Material with 3 Blend Layers (Object, Snow, Ice) created to dynamically paint snow and icicles on any object in the scene based on vertex color.</p>
+                <p id="6b95b04f-ca97-43a8-82ce-d29f9f4971d4" class="">It detects the vertex normal direction to apply a proportional tessellated height displacement creating icicles on the bottom facing areas, and snow on the top facing areas.</p>
+                <p id="268c946b-42e3-4c92-b2f1-aad139fcbc7c" class="">Light and color can be individually controlled for each blend layer, and icicles can shine through with subsurface scattering, or the same effect can be approximated with an optional emissive color exponent if desired for extra performance
+                    optimization.
+                </p>
+                <figure id="be4e690e-b23b-4225-8a1a-b9cd7e37324c" class="image">
+                    <img style="width:1351px" src="img/portfolio/Icicles/article/material.png" />
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

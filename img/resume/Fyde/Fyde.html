@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/resume/Fyde/gallery/fyde.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <iframe class="h-100 w-100" src="https://player.vimeo.com/video/253071184" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <iframe class="h-100 w-100" src="https://player.vimeo.com/video/253070994" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/resume/Fyde/gallery/fyde.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/resume/Fyde/gallery/t1.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="2" class="list-inline-item">
+            <img src="img/resume/Fyde/gallery//t2.jpg" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Software Development Internship / Fyde, Inc</h1>
+                <div class="page-body">
+                    <p id="3150a3e1-9164-4027-ac7f-6f327c576b1c" class="">Oct 2017 - Feb 2018</p>
+                    <p id="58785261-4040-4ab9-9290-77918923629f" class="">Worked at Fyde Inc. as an Intern Mobile Software Engineer, researching and developing animated components for a mobile security app in React Native. </p>
+                    <p id="7a6817fc-41bd-4bfb-9ce7-1946dcdf530e" class="">Roles included adapting existing designs into animatable sequences for the introduction section of the app, and translating graph visualizations into usable components.</p>
+                    <p id="c3b8f8b0-1d60-4de6-a248-a5bb47440d78" class="">
+                    </p>
+                    <ul id="a054ece9-de14-4810-99f2-e4ad0e2e06ec" class="bulleted-list">
+                        <li>More Info: <a href="https://fyde.com/"><strong>Fyde Website</strong></a></li>
+                    </ul>
+                    <ul id="c473f142-98bc-4cea-90a1-b989695bfa2e" class="bulleted-list">
+                        <li>Skills: <strong> Software development, Mobile Development, iOS development, 2D Animation, UI/UX, Design Integration</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

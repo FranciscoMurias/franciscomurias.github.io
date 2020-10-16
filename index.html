@@ -2,1406 +2,712 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>Francisco Múrias - Portfolio Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <link rel="shortcut icon" href="img/profile.png" />
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <script type="text/Javascript">
-    window.onload = function() { if(screen.width
-    < 700){ $( "[src='img/header.png']")[0].style.display="none" ; $( ".masthead")[0].style.paddingTop="70px" ; } else { } } </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
-      <script>
-        function gallery1(imgs) {
-          var expandImg = document.getElementById("expandedImg1");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
-        }
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        function gallery2(imgs) {
-          var expandImg = document.getElementById("expandedImg2");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
-        }
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-        function gallery3(imgs) {
-          var expandImg = document.getElementById("expandedImg3");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
-        }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
 
-        function gallery4(imgs) {
-          var expandImg = document.getElementById("expandedImg4");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
-        }
-      </script>
-
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="">
-      <meta name="author" content="Francisco Múrias">
-
-      <title>Francisco Múrias - Portfolio Page</title>
-
-      <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-      <!-- Custom fonts for this template -->
-      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-      <!-- Custom styles for this template -->
-      <link href="css/freelancer.min.css" rel="stylesheet">
-
-      <script src="https://kit.fontawesome.com/c993eeb1e7.js" crossorigin="anonymous"></script>
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Francisco Murias</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about" style="font-size: 0.9rem;">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio" style="font-size: 0.9rem;">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact" style="font-size: 0.9rem;">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <img style="position:relative;top:505px;left:5px;z-index:1;margin-top:-700px;" src="img/header.png">
-      <img style="position:relative;z-index:2;" class="img-fluid" src="img/profile.png" alt="">
-      <div style="position:relative;z-index:2;" class="intro-text">
-        <span class="name">C:/FRANCISCO_MURIAS/</span>
-        <div> </div>
-        <span class="skills" style="font-family: 'Press Start 2P';">PIXELS, POLYGONS AND ASCII</span>
-      </div>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section class="success" id="about" style="background-color: #1e1e38; padding-top: 65px; padding-bottom: 75px;">
-    <div class="container">
-      <h2 class="text-center">About Me</h2>
-      <p> </p>
-      <div class="row">
-        <div class="col-lg-8 ml-auto" style="padding-right: 60px;">
-          <p style="font-weight: 700;">Background</p>
-          <p style="font-size: 18px;">I'm Francisco, a passionate professional tech artist who loves to design and develop game experiences and environments. I'm enthusiastic about proceduralism and generative workflows and aspire to bridge the gap between art and programming. </p>
-          <p style="font-size: 18px;">I'm creating games, tools, and interactive art. I like making things that get people to imagine, explore, create and immerse themselves in wonderful fictional worlds.</p>
-          <p style="font-size: 18px;">After earning my BSc in Computer Science from the University of Porto, I'm currently studying MA 3D Games Art at Teesside University in Middlesbrough, UK.</p>
-          <p style="padding-top: 0px;"> </p>
-          <a href="cv/Francisco Múrias - CV.pdf" target="_blank" class="btn btn-lg btn-outline">
-            <i class="fa fa-download"></i> Download CV
-          </a>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p style="font-weight: 700;">Skills</p>
-          <p>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">3D Modeling</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Environment Art</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Hard Surface</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Level Design</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Technical Art</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Procedural Content Creation</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Computer Science</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Programming</div>
-            <div style=" display: inline; background-color: transparent; color: #5bc0de; border: 1px solid #5bc0de; font-weight: 400; font-size: 75%; padding: .2em .6em .3em; line-height: 1; border-radius: .25em; white-space: nowrap;">Web Development</div>
-          </p>
-          <p style="font-weight: 700;">Software</p>
-          <table style="width:100%">
-            <tr style="width: 33.33%; padding: 0 10px;">
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/unreal.png" style="width: 30px; height: 30px; margin-right: 0px;"></img> Unreal Engine </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/3dsmax.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> 3Ds Max </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/zBrush.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> ZBrush </div>
-              </td>
-            </tr>
-            <tr style="width: 33.33%; padding: 0 10px;">
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/blender.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> Blender </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/SubstanceSuite.png" style="width: 30px; height: 30px; margin-right: 0px;"></img> Substance Suite </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/Quixel_Suite.png" style="width: 30px; height: 30px; margin-right: 6px;"></img> Quixel Suite </div>
-              </td>
-            </tr>
-            <tr style="width: 33.33%; padding: 0 10px;">
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/Houdini.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> Houdini </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/photoshop.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> Photoshop </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/aftereffects.png" style="width: 30px; height: 30px; margin-right: 5px;"></img> AfterEffects </div>
-              </td>
-            </tr>
-            <tr style="width: 33.33%; padding: 0 10px;">
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/js.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> Javascript </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/react.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> ReactNative </div>
-              </td>
-              <td>
-                <div style="display: flex; -webkit-box-align: center; align-items: center; margin-top: 5px; margin-bottom: 5px; text-align: center !important; margin-left: 0px; text-align: left; box-sizing: border-box; font-size: 14px; line-height: 1.2;"><img src="img/software/love.png" style="width: 30px; height: 30px; margin-right: 10px;"></img> Love2D </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!--
-              <div class="col-lg-8 mx-auto text-center">
-                <a href="cv/Francisco Múrias - CV.pdf" target="_blank" class="btn btn-lg btn-outline">
-                  <i class="fa fa-download"></i>
-                  Download CV
-                </a>
-              </div>
-              -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Grid Section -->
-  <section id="portfolio" style="background-color: #2a2a3a; color: white; padding-top: 70px; ">
-    <div class="container">
-      <h2 class="text-center">3D Projects</h2>
-      <p> </p>
-      <div class="row">
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioIcebase" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/icebase.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioHoudini1" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/buildinggenerator.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioPortal" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/portal.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioShip" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/ship.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioGenerator" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/gen.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioCoins" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/coins.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioExistender" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/existender.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioInterstellar" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/interstellar.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioVoxel" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/voxelmaker.png" alt="">
-          </a>
-        </div>
-        <!-- ========================================================================================================================================================== -->
+<body>
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header">
         <div class="container">
-          <h2 class="text-center" style="margin-top: 35px;">Game Jam Games</h2>
-          <p> </p>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioShadow" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/shadowcasters.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioDomain" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/domain.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioDungeon" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/dungeon.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioDisplaced" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/displaced.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioReset" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/reset.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioGlobal" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/global.png" alt="">
-          </a>
-        </div>
-        <!-- ========================================================================================================================================================== -->
-        <div class="container">
-          <h2 class="text-center" style="margin-top: 35px;">Professional projects</h2>
-          <p> </p>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioFyde" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/fyde.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioPortoGraphics" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/PG.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioHalo" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioMurias" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/ameurmurias.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioTapFleet" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/tapfleet.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#contact">
-            <div class="caption">
-              <div class="caption-content">
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/your.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" style="background: #0a0b11; color: white; padding-top: 115px;">
-    <div class="container">
-      <h2 class="text-center">Reach me around the Web</h2>
-      <div style="margin-top:20px;text-align:center;font-size:20px;">
-        Got an interesting project? Feel free to drop me a line and I’ll get back to you as soon as possible!
-        <div> </div>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a class="btn-social btn-outline" href="https://www.linkedin.com/in/francisco-múrias-890bba149/" style="font-size: 50px; border:0px; width:73px; height:73px; line-height: 68px; border-radius: 10%;">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-social btn-outline" href="https://github.com/FranciscoMurias" style="font-size: 50px; border:0px; width:73px; height:73px; line-height: 68px; border-radius: 10%;">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-social btn-outline" href="https://franciscomurias.itch.io/" style="font-size: 50px; border: 0px; width:73px; height:73px; line-height: 68px; border-radius: 10%;">
-              <i class="fab fa-itch-io"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-social btn-outline" href="https://www.artstation.com/franciscomurias" style="font-size: 50px; border: 0px transparent; width:73px; height:73px; line-height: 68px; border-radius: 10%;">
-              <i class="fab fa-artstation"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-social btn-outline" href="https://twitter.com/FrancisMurias" style="font-size: 50px; border:0px; width:73px; height:73px; line-height: 68px; border-radius: 10%;">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-        <div> </div>
-        <div style="margin-top:20px;text-align:center;font-size:20px;">
-          Or reach me by email at <a href="mailto:francis.mmcp@gmail.com"> francis.mmcp@gmail.com</a>
-  </section>
+            <div id="logo" class="pull-left">
+                <h1><a href="#intro" class="scrollto">Francisco Múrias</a></h1>
+            </div>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="footer-below" style="background-color: #1e1e38;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Copyright &copy; Francisco Múrias 2020
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top d-lg-none">
-    <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-
-
-  <!-- =================================================================================================================================== -->
-
-
-  <!-- Portfolio Modals -->
-  <div class="portfolio-modal modal fade" id="portfolioDungeon" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Dungeon Bombers</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/dungeon.png" alt="">
-                <p>Work in Progress: Small personal project consisting of a bomberman like game made with Love2D. Meant to hone the skills required to produce all the art, code and music for a simple yet juicy and polished game.</p>
-                <ul class="list-inline item-details">
-                  <li>More Info:
-                    <strong>
-                          <a href="https://github.com/FranciscoMurias/DungeonBomber">Git Repo</a>
-                        </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                          2018
-                        </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                        Game Development, Programming, Pixel Art, Music Production
-                        </strong>
-                  </li>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <!-- <li class="menu-active"><a href="#intro">Home</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#jams">Game Jams</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                      <i class="fa fa-times"></i>
-                      Close</button>
-              </div>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro">
+        <video class="video" src="videos/video.webm" autoplay muted loop></video>
+        <div class="intro-container wow fadeIn">
+            <div class="container">
+                <h1 class="mb-4 pb-0">Francisco <span>Múrias</span></h1>
+                <p class=" mb-4 pb-0 intro-subtitle"><span class="text-slider-items">Procedural Technical Artist,3D Environment Artist,Computer Scientist,Game Developer</span><strong class="text-slider"></strong>
+                </p>
+                <!-- <a href="https://www.youtube.com/watch?v=r7VhjJ27YZQ" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
+                <a href="https://www.youtube.com/watch?v=r7VhjJ27YZQ" class="about-btn venobox play-btn mb-4" style="margin-left: 0px;" data-vbtype="video">    Play my reel</a>
+                <!-- <a href="https://www.youtube.com/watch?v=r7VhjJ27YZQ" class="about-btn venobox " style="margin-left: 0px;" data-vbtype="video"><i class="fa fa-play"></i>  Play my reel</a> -->
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioPortal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>Lost Portal Scene</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <p style="font-size: 17px;">Alien Portal in a swamp environment running in realtime in Blender eevee renderer, developed as a short exercise. Strong emphasis on generative modeling, fog volumes and moody lighting.</p>
-                <img src="img/portfolio/Portal/p1.png" id="expandedImg3" style="width:100%; margin-bottom:4px;">
-                <div style="margin: auto;">
-                  <img src="img/portfolio/Portal/p1.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery3(this);">
-                  <img src="img/portfolio/Portal/p2.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery3(this);">
-                  <img src="img/portfolio/Portal/p3.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery3(this);">
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                        September 2019
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                       Blender, Lighting and Shaders, Organic Modeling, Generative Modeling, Texturing, Rendering
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioGenerator" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>Fusion Core (UE4)</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <p style="font-size: 17px;">Fusion Energy Generator Scene running in realtime in Unreal Engine 4 developed for the Lighting and Rendering Module for my MA in 3D Games Art. Strong emphasis on dynamic lighting and moving elements, as well as modular hard surface pieces
-                  for quick adaptability of the scene.</p>
-                <img src="img/portfolio/Fusion/1.png" id="expandedImg1" style="width:100%; margin-bottom:4px;">
-                <div style="margin: auto;">
-                  <img src="img/portfolio/Fusion/1.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery1(this);">
-                  <img src="img/portfolio/Fusion/2.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery1(this);">
-                  <img src="img/portfolio/Fusion/3.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery1(this);">
-                  <img src="img/portfolio/Fusion/4.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery1(this);">
-                  <img src="img/portfolio/Fusion/5.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery1(this);">
-                  <img src="img/portfolio/Fusion/6.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery1(this);">
-                  <img src="img/portfolio/Fusion/7.png" alt="" style="width:13.6%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery1(this);">
+    </section>
+
+    <main id="main">
+
+        <!--==========================
+      Portfolio Section
+    ============================-->
+        <section id="portfolio">
+            <div class="container wow fadeInUp">
+                <div class="section-header text-center">
+                    <h2>PORTFOLIO</h2>
+                    <button type="button" class="btn active portfolio-filter" data-filter=".portfolio-3dprojects, .portfolio-tools, .portfolio-games, .portfolio-materials">All</a>
+                            <button type="button" class="btn portfolio-filter" data-filter=".portfolio-3dprojects">3D
+                                Projects</a>
+                                <button type="button" class="btn portfolio-filter"
+                                    data-filter=".portfolio-tools">Tools</a>
+                                    <button type="button" class="btn portfolio-filter"
+                                        data-filter=".portfolio-materials">Materials</a>
+                    </div>
+                    <div class="grid" style="margin-bottom: 36px;">
+                        <div class="grid-item portfolio-item portfolio-3dprojects portfolio-tools">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="LinesToTerrain"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/LinesToTerrain/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Machine Learning Terrain Authoring</h3>
+                                    <p>Masters Thesis: Full Pipeline Development</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="ArcticOutpost"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/ArcticOutpost/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Artic Outpost</h3>
+                                    <p>Unreal Engine 4 Scene</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-tools">
+                            <a class="portfolio-element btn-block" data-type="portfolio"
+                                data-portfolio="BuildingGenerator" data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/BuildingGenerator/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Procedural Building Generator</h3>
+                                    <p>Houdini Digital Asset</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Nebula"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/Nebula/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Nebula Journey</h3>
+                                    <p>Unreal Engine 4 Scene</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="FuisonGen"
+                                data-title="Fusion Generator (UE4)" data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/FuisonGen/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Fusion Generator</h3>
+                                    <p>Unreal Engine 4 Scene</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects portfolio-materials">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Treasure"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/Treasure/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Procedural Treasure</h3>
+                                    <p>Substance Designer Material</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-tools portfolio-materials">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Icicles"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/Icicles/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Procedural Icicles</h3>
+                                    <p>Unreal Engine Tool</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-materials">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Azulejos"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/Azulejos/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Procedural Azulejo Tiles</h3>
+                                    <p>Substance Designer Material</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-tools">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="HoudiniTrees"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/HoudiniTrees/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Procedural Stylized Trees</h3>
+                                    <p>Houdini Digital Asset</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-tools">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="HoudiniCliffs"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/HoudiniCliffs/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Mesh Driven Cliffs</h3>
+                                    <p>Houdini Digital Asset</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Portal"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/Portal/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Lost Portal</h3>
+                                    <p>Blender Real-time Scene</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-tools">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="RuneGen"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/RuneGen/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Runic Alphabet Generator</h3>
+                                    <p>Python Generative Tool</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Interstellar"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/Interstellar/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Interstellar Inspired Short Film</h3>
+                                    <p>Learning Exercise in animation</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Existender"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/Existender/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Existender</h3>
+                                    <p>Learning Exercise in animation</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item portfolio-item portfolio-3dprojects">
+                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="VoxelMaker"
+                                data-toggle="modal" data-target="#portfolioModal">
+                                <img src="img/portfolio/VoxelMaker/thumbnail.png" alt="experience-image 1"
+                                    class="img-fluid portfolio-thumb">
+                                <div class="details">
+                                    <h3>Voxelmaker</h3>
+                                    <p>Voxel 3D modeling analysis</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/r7VhjJ27YZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                <p style="font-size: 17px; margin-top: 30px;"> Complete scene breakdown including inspiration and workflow process outlined in the poster presentation bellow.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="img/portfolio/Fusion/poster-fusioncore.pdf" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-info"></i> More info
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                        May 2019
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                       Unreal Engine, Lighting and Shaders, Hard Surface Modeling, Texturing, Rendering
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioShip" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>Nebula Journey (UE4)</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <p style="font-size: 17px;">Nebula Journey Scene running in realtime in Unreal Engine 4 developed for the 3D Optimization Module for the MA in 3D Games Art. For the scenery I explored UE4's volumetric particle effects for the nebula generation, as well as instanced
-                  static mesh procedural generation for the asteroid fields. The spaceship was built using a modular hard surface workflow.</p>
-                <img src="img/portfolio/Nebula/1.png" id="expandedImg2" style="width:100%; margin-bottom:4px;">
-                <div style="margin: auto;">
-                  <img src="img/portfolio/Nebula/1.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/2.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/3.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/4.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/5.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/6.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/7.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/8.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
-                  <img src="img/portfolio/Nebula/9.png" alt="" style="width:10.7%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery2(this);">
+            </section>
+
+            <!--==========================
+      Game Jams Section
+    ============================-->
+            <section id="jams" style="background-color: #06060d;">
+
+                <div class="container wow fadeInUp" style="overflow: hidden;">
+                    <div class="section-header">
+                        <h2>Game Jams</h2>
+                    </div>
+                    <div class="owl-carousel gallery-carousel owl-loaded owl-drag ">
+                        <a class="portfolio-element" data-type="games" data-portfolio="OverNOut" data-toggle="modal" data-target="#portfolioModal" data-gall="gallery-carousel" style="cursor: pointer;"> <img src="img/games/OverNOut/thumbnail.png" alt=""></a>
+                        <a class="portfolio-element" data-type="games" data-portfolio="Shadowcasters" data-toggle="modal" data-target="#portfolioModal" data-gall="gallery-carousel" style="cursor: pointer;"><img src="img/games/Shadowcasters/thumbnail.png" alt=""></a>
+                        <a class="portfolio-element" data-type="games" data-portfolio="Domain" data-toggle="modal" data-target="#portfolioModal" data-gall="gallery-carousel" style="cursor: pointer;"><img src="img/games/Domain/thumbnail.png" alt=""></a>
+                        <a class="portfolio-element" data-type="games" data-portfolio="DungeonBombers" data-toggle="modal" data-target="#portfolioModal" data-gall="gallery-carousel" style="cursor: pointer;"><img src="img/games/DungeonBombers/thumbnail.png" alt=""></a>
+                        <a class="portfolio-element" data-type="games" data-portfolio="Reset" data-toggle="modal" data-target="#portfolioModal" data-gall="gallery-carousel" style="cursor: pointer;"><img src="img/games/Reset/thumbnail2.png" alt=""></a>
+                        <a class="portfolio-element" data-type="games" data-portfolio="Displaced" data-toggle="modal" data-target="#portfolioModal" data-gall="gallery-carousel" style="cursor: pointer;"><img src="img/games/Displaced/thumbnail.png" alt=""></a>
+                      </div>
                 </div>
 
-                <p style="font-size: 17px; margin-top: 30px;"> Complete scene breakdown including inspiration and workflow process outlined in the presentation bellow.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="img/portfolio/Nebula/FranciscoNebula.pdf" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-info"></i> More info
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                        May 2019
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                       Unreal Engine, Lighting and Shaders, Hard Surface Modeling, Texturing, Rendering
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
+            </section>
+
+        <!--==========================
+      Experience Section
+    ============================-->
+    <section id="experience" class="section-with-bg">
+        <div class="container wow fadeInUp">
+            <div class="section-header">
+                <h2>Experience</h2>
             </div>
-          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Professional Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Education</a>
+                </li>
+            </ul>
+
+            <div class="tab-content row justify-content-center">
+
+                <!-- Professional Projects -->
+                <div role="tabpanel" class="col-lg-12 tab-pane fade show active" id="day-1">
+
+                    <div class="portfolio-element experience-item" data-type="resume" data-portfolio="Fyde" data-toggle="modal" data-target="#portfolioModal">
+                        <div class="experience-image">
+                            <img src="img/resume/Fyde/logo.png" alt="Fyde">
+                        </div>
+                        <div class="experience-description">
+                            <h4>Software Development Internship / Fyde, Inc</h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>Oct 2017 - Feb 2018</p>
+                            <p>Responsible for creating, implementing and testing a robust animation solution for the tutorial screens of a mobile security app for iOS developed with react Native, coordinating with the inhouse designer and other developers.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-element experience-item"  data-type="resume" data-portfolio="PG" data-toggle="modal" data-target="#portfolioModal">
+                        <div class="experience-image">
+                            <img src="img/resume/PG/logo.png" alt="Porto Graphics">
+                        </div>
+                        <div class="experience-description">
+                            <h4>Co-Founder and Team Leader / Porto Graphics</h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>Oct 2013 - Feb 2018</p>
+                            <p>Co-founded Porto Graphics, a group focused on promoting computer graphics knowledge sharing. Managed a team of multi disciplinary people, and organized several events, workshops and Game Jams with hundreds of participants.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-element experience-item"  data-type="resume" data-portfolio="WebDev" data-toggle="modal" data-target="#portfolioModal">
+                        <div class="experience-image">
+                            <img src="img/resume/WebDev/logo.png" alt="Web Dev">
+                        </div>
+                        <div class="experience-description">
+                            <h4>Web Designer and Developer / Freelance</h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>Apr 2015 - Jan 2018</p>
+                            <p>Freelance Web Development Projects. Examples include "Ameur Murias", a Law firm in Canada. Designed and developed website and backend systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item"  data-type="resume" data-portfolio="UJr" style="cursor: default;">
+                        <div class="experience-image">
+                            <img src="img/resume/uporto.png" alt="UPorto">
+                        </div>
+                        <div class="experience-description">
+                            <h4>3D Modeling Instructor / University of Porto</h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>Jun 2017 - Aug 2017</p>
+                            <p>Instructor in 3D Modeling with Blender, for kids aged 16-18 for the summer week courses in Junior University of University of Porto.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-element experience-item"  data-type="resume" data-portfolio="FunPunch" data-toggle="modal" data-target="#portfolioModal">
+                        <div class="experience-image">
+                            <img src="img/resume/FunPunch/logo1.png" alt="Fun Punch Games">
+                        </div>
+                        <div class="experience-description">
+                            <h4>UI/UX Designer and 2D Artist / Fun Punch Games</h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>Feb 2016 - Jun 2016</p>
+                            <p>User Interface & 2D designer for a mobile game based on android. Responsible for developing UI and menu interfaces, restructuring and rebalancing UX and various 2D asset creation.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End of Professional Projects-->
+
+                <!-- Education -->
+                <div role="tabpanel" class="col-lg-12  tab-pane fade" id="day-2">
+
+                    <div class="experience-item" style="cursor: default;">
+                        <div class="experience-image">
+                            <img src="img/resume/teesside.png" alt="Teesside">
+                        </div>
+                        <div class="experience-description">
+                            <h4>Teesside University <span>England, UK</span></h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>2019 - 2020</p>
+                            <p><b>Masters in 3D Games Art (Honours)</b></p>
+                            <p>Dissertation: "Development of a machine learning based interactive virtual terrain authoring pipeline for video games and 3D Media"</p>
+                            <p>Topics: 3D Content creation, Procedural Art, Technical Pipelines, Material Creation, Optimization, Machine Learning</p>
+                            <p class="experience-date"><i class="fas fa-award time-icon"></i>Highest Grade Award</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" style="cursor: default;">
+                        <div class="experience-image">
+                            <img src="img/resume/uporto.png" alt="UPorto">
+                        </div>
+                        <div class="experience-description">
+                            <h4>University of Porto <span>Portugal</span></h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>2013 - 2018</p>
+                            <p><b>BSc in Computer Science</b></p>
+                            <p>Topics: Analysis and implementation of data structures and algorithms; discrete mathematics; programming languages and paradigms (C, C++, Java, Python, Haskell); operating systems; artificial intelligence; 3D Graphics; Games Programming</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item" style="cursor: default;">
+                        <div class="experience-image">
+                            <img src="img/resume/ipvc4.png" alt="IPVC">
+                        </div>
+                        <div class="experience-description">
+                            <h4>Politechnic Institute of Viana do Castelo <span>Portugal</span></h4>
+                            <p class="experience-date"><i class="fa fa-calendar time-icon"></i>2012 - 2013</p>
+                            <p><b>Computer Graphics and Multimedia Engineering</b></p>
+                            <p>Technical Course</p>
+                            <p class="experience-date"><i class="fas fa-award time-icon"></i>Highest Entry Grade Award</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Education -->
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioIcebase" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>Artic Outpost (UE4)</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <p style="font-size: 17px;">Artic Outpost Unreal Engine 4 Scene following the theme "Lost Worlds". Developed for the 3D Games Art Course at Teesside University.</p>
-                <img src="img/portfolio/ArticBase/1.png" id="expandedImg4" style="width:100%; margin-bottom:4px;">
-                <div style="margin: auto;">
-                  <img src="img/portfolio/ArticBase/1.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/2.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/3.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/4.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/5.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/6.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/7.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/8.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/9.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/10.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/11.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/12.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/13.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
-                  <img src="img/portfolio/ArticBase/14.png" alt="" style="width:6.5%; cursor:pointer;" onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';" onclick="gallery4(this);">
+    </section>
+
+            <!--==========================
+      About Section
+    ============================-->
+            <section id="about" class="section-bg" style="padding-bottom: 83px;">
+
+                <div class="container wow fadeInUp">
+
+                    <div class="section-header">
+                        <h2>About Me</h2>
+                    </div>
+
+                    <div class="container contact-info">
+
+                        <div class="row">
+                            <div class="col-lg-3 text-center" style="margin-bottom: 30px; padding-left: 0px;"><img
+                                    style="max-width: 100%; max-height: 100%;" src="img/profile.png"></div>
+                            <div class="col-lg-9">
+                                <p style="font-size: 18px;">I am an ambitious <b>Procedural Technical Artist</b>
+                                    currently
+                                    living in Portugal. I studied Computer Science at the University of Porto, and
+                                    recently
+                                    undertook my masters in 3D Games Art at Teesside University where I specialized in
+                                    Technical Art and graduated top of my class.</p>
+                                <p style="font-size: 18px;">While I have enjoyed both the artistic and programming side
+                                    of
+                                    game development for years, I found my true passion in proceduralism and generative
+                                    3D
+                                    art. I'm creating games, tools, and interactive art. I like making things
+                                    that get people to imagine, explore, create and immerse themselves in wonderful
+                                    fictional worlds.</p>
+                                <p style="font-size: 18px;">I love working together with enthusiastic people to create
+                                    amazing projects, though I am very capable to work on my own. I am a social,
+                                    self-motivated and adaptive learner with a broad skill set and a passion for games &
+                                    technical
+                                    art. I am available to work on all kinds of projects so for further information,
+                                    please
+                                    do not hesitate to contact me.</p>
+                                <p style="padding-top: 3px;"> </p>
+                                <a href="assets/Francisco Múrias - CV.pdf" target="_blank"
+                                    class="btn btn-lg btn-outline">
+                                    <i class="fa fa-download"></i> Download CV
+                                </a>
+                                <a href="#contact" class="btn btn-lg btn-outline scrollto">
+                                    <i class="fas fa-envelope"></i> Contact Me
+                                </a>
+                            </div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="row">
+
+                            <div class="col-xl-5 col-lg-8 offset-lg-2 offset-xl-0">
+                                <div class="tools">
+                                    <div class="tool-header">
+                                        <h6><b>Software</b></h6>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/unreal.png"></div>
+                                        <div class="tool-title">Unreal Engine</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/blender.png"></div>
+                                        <div class="tool-title">Blender</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/Houdini.png"></div>
+                                        <div class="tool-title">Houdini</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/unity.png"></div>
+                                        <div class="tool-title">Unity</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/SubstanceSuite.png"></div>
+                                        <div class="tool-title">Substance Suite</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/Quixel_Suite.png"></div>
+                                        <div class="tool-title">Quixel Suite</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/3dsmax.png"></div>
+                                        <div class="tool-title">3Ds Max</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/photoshop.png"></div>
+                                        <div class="tool-title">Photoshop</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/aftereffects.png"></div>
+                                        <div class="tool-title">After Effects</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/zBrush.png"></div>
+                                        <div class="tool-title">ZBrush</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/marmorset.png"></div>
+                                        <div class="tool-title">Marmorset Toolbag</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/gaea.png"></div>
+                                        <div class="tool-title">Gaea</div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="tools">
+                                    <div class="tool-header">
+                                        <h6><b>Languages and Frameworks</b></h6>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/python.png"></div>
+                                        <div class="tool-title">Python</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/js.png"></div>
+                                        <div class="tool-title">Javascript</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/c.png"></div>
+                                        <div class="tool-title">C/C++</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/tf.png"></div>
+                                        <div class="tool-title">Tensorflow</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/react.png"></div>
+                                        <div class="tool-title">ReactNative</div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-image"><img src="img/software/love.png"></div>
+                                        <div class="tool-title">Love2D</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 offset-xl-1 col-lg-8 offset-lg-2">
+                                <div class="skills">
+                                    <div class="skill-title">
+                                        <h6><b>Skills</b></h6>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-cube text-center"></i>
+                                        <span>High & Low Poly Modeling</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="far fa-edit text-center"></i>
+                                        <span>Decal and Trimsheet Creation</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-cubes text-center"></i>
+                                        <span>Procedural Content Creation</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-code text-center"></i>
+                                        <span>Tools Development</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-dice-d20 text-center"></i>
+                                        <span>Generative Modeling</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-connectdevelop text-center"></i>
+                                        <span>Machine Learning</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="far fa-gem text-center"></i>
+                                        <span>Materials & Shaders</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-laptop text-center"></i>
+                                        <span>Web Design and Development</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="far fa-lightbulb text-center"></i>
+                                        <span>Scene Lighting and Post Processing</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-crosshairs text-center"></i>
+                                        <span>HUD Design</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="far fa-map text-center"></i>
+                                        <span>Level Design</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-server text-center"></i>
+                                        <span>UI/UX</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-magic text-center"></i>
+                                        <span>Realtime Performance Optimization</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-palette text-center"></i>
+                                        <span>Pixel Art</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-tree text-center"></i>
+                                        <span>Environment Production</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-users text-center"></i>
+                                        <span>Team Management</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- #contact -->
+            <!--==========================
+      Contact Section
+    ============================-->
+            <section id="contact" class="section-bg wow fadeInUp">
+
+                <div class="container">
+
+                    <div class="section-header" style="padding-bottom: 2px;">
+                        <h2>Contact</h2>
+                    </div>
+                    <div style="text-align:center;font-size:20px;">
+                        Leave me a message at <a href="mailto:francis.mmcp@gmail.com"> francis.mmcp@gmail.com</a>
+                    </div>
+                    <br><br>
+                    <div class="row contact-info">
+                        <div class="social-links col-xl-12">
+                            <a href="https://www.artstation.com/franciscomurias"><i class="fab fa-artstation"></i></a>
+                            <a href="https://github.com/FranciscoMurias"><i class="fa fa-github"></i></a>
+                            <a href="https://franciscomurias.itch.io/"><i class="fab fa-itch-io"></i></a>
+                            <a href="https://www.linkedin.com/in/francisco-múrias-890bba149/"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- #contact -->
+
+        </main>
+
+
+        <!--==========================
+    Footer
+  ============================-->
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong>Francisco Múrias</strong> 2020
+                </div>
+            </div>
+        </footer>
+        <!-- #footer -->
+
+        <!--==========================
+    Modals
+    ============================-->
+
+        <div class="modal fade p-0" id="portfolioModal" tabindex="-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                    <div class="modal-dialog">
+                        <div data-simplebar data-simplebar-auto-hide="false" class="modal-content">
+                            <div class="modal-body h-100">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-script"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <p style="font-size: 17px; margin-top: 30px;"> Complete scene breakdown including inspiration and workflow process outlined in the presentation bellow.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="img/portfolio/ArticBase/ArticMaterialsPresentation.pdf" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-info"></i> More info
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                      December 2019
-                    </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                     Unreal Engine, Lighting and Shaders, Hard Surface Modeling, Texturing, Rendering
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioHoudini1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>Procedural Building Generator (Houdini)</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <p style="font-size: 17px;">Procedural Generator of multiuse architectural structures from authored modular components for the creation of 3D environments in videogames. Project developed as part of Research Methods module for Teesside University in 2019.</p>
-                <img src="img/portfolio/BuildingGenerator/header.png" style="width:100%; margin-bottom:4px;">
-                <img src="img/portfolio/BuildingGenerator/Timelapse.gif" style="width:100%; margin-bottom:4px;">
-                <img src="img/portfolio/BuildingGenerator/Houdini.png" style="width:100%; margin-bottom:4px;">
-                <p style="font-size: 17px; margin-top: 30px;">More information on the the project can be found in the poster presentation bellow.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="img/portfolio/BuildingGenerator/BuildingGeneratorPoster.pdf" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-info"></i> More info
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                      December 2019
-                    </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                     Procedural Content Creation, Houdini, Modular Development
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioPortoGraphics" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 80%; max-width: 80%;">
-              <div class="modal-body">
-                <img src="img/portfolio/PortoGraphics/PG_transp.png" style="width:40%; margin-bottom:10px;">
-                <p style="font-size: 17px;">Initial founder of the Computer graphics student group “Porto Graphics”, based at the Department of Computer Science at FCUP, which focused on advancing and promoting the learning of computer graphics and its disciplines, through public
-                  events and activities, such as competitions, workshops, roundtables and talks.</p>
-                <p style="font-size: 17px;">Responsible for most of the design and visual presentation of the group, having developed its website and logo identity, and taught various workshops (Photoshop, Blender, User interfaces) and activities.</p>
-                <p style="font-size: 17px;">In the last 3 years of its existence, I took up the leadership of the group and led the organization of 3 different game jam events with over a hundred participants each, featuring the support of UPTEC and MNSR.</p>
-                <img src="img/portfolio/PortoGraphics/events.png" style="width:100%; margin-bottom:4px;">
-                <p style="font-size: 17px; margin-top: 30px;"> Although the official website is no longer in operation, the group page can be found bellow.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="https://www.facebook.com/dcc.PortoGraphics/" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                   Official Page </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                        September 2013 - June 2018
-                      </strong>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioFyde" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Fyde Internship</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/fyde.png" alt="">
-                <p>Worked at <a href="https://fyde.com/">Fyde Inc.</a> as an Intern Mobile Software Engineer, researching and developing animated components for a mobile security app in React Native. Roles included adapting existing designs into animatable
-                  sequences for the introduction section of the app, and translating graph visualizations into usable components.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="https://vimeo.com/253071184" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-play"></i> Preview Animations
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>More Info:
-                    <strong>
-                        <a href="https://fyde.com/">Fyde Website</a>
-                      </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                        October 2017 - February 2018
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                      Software development, Mobile Development, iOS development, Animation, Design Intergration
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioDomain" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Domain Conflict</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/domain.png" alt="">
-                <p>Game developed for the <a href="http://portographics.dcc.fc.up.pt/retrojam.html">Retro Jam 2017</a> developed in PICO-8 in 32 hours. First Place Winner! Roles included Programming, Art and gameplay Design.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="https://franciscomurias.itch.io/domain-conflict" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-play"></i> Play it here
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>More Info:
-                    <strong>
-                          <a href="http://portographics.dcc.fc.up.pt/retrojam.html">Retro Jam Game Jam Page</a>
-                        </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                        March 2017
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                       Game development, 2D Art, Level Design, Programming
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioCoins" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>Procedural Treasure Material</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/coinsbig.png" alt="">
-                <p>Procedural material developed in Substance Designer as a short exercise.</p>
-                <p>Used to test an Unreal Engine mechanic to collect treasure in piles of gold. I used terrain deformation to deform the piles as the player collides with the treasure.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                Artstation
-                </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                      October 2019
-                    </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                     Material Creation, Procedural Content Creation, Game Design
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioShadow" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Shadow Casters</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/shadowcasters.png" alt="">
-                <p>Game developed for the Teesside Games Creation Society Jam in 2019, developed in Unity in 32 hours. First Place Winner! I was responsible for all the art and game design.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="https://franciscomurias.itch.io/shadowcasters" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-play"></i> Play it here
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>More Info:
-                    <strong>
-                        <a href="https://www.facebook.com/groups/TUGamesCreation/permalink/756382121442189/">Society Game Jam Post</a>
-                      </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      November 2019
-                    </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                     Game development, 2D Art, UI, Game Design, Programming
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioExistender" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>Existender</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://player.vimeo.com/video/198602000" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                <p style="margin-top: 20px;"></p>
-                <p>Final project for 3D course in FBAUP. Consisted of inventing and modeling a paradoxical or impossible object in Blender 3D, and promoting it with a set of Posters and a Video. The product developed was the EXISTENDER Glove, a highly technological
-                  glove that could create modify and destroy reality. The setting and mood was inspired by classic 80’s over the top ads and visuals.</p>
-                <img class="img-fluid img-centered" src="img/portfolio/Existender/final_render.png" alt="">
-                <ul class="list-inline item-details">
-                  <li>More info:
-                    <strong>
-                        <a href="https://fmuriasge.wordpress.com/2017/01/10/existender-project-p01-p02/" target="_blank">Blog Post</a>
-                      </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                        January 2017
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                        3D Modeling and Animation
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioReset" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>RESET</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/reset.png" alt="">
-                <p>Game developed for the <a href="http://portographics.tech/events.php?title=Game%20Jam%202015">Porto graphics Game Jam 2015</a> developed in Unity3D in 32 hours. 2nd Place winner. Roles included level design, 3D modeling and asset development.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="cv/RESET.zip" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-download"></i> Download Game
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>More Info:
-                    <strong>
-                        <a href="http://portographics.tech/events.php?title=Game%20Jam%202015">Porto graphics Game Jam Page</a>
-                      </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                        March 2015
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                       Game development, 3D and 2D Art, Level Design
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioDisplaced" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Displaced</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/displaced.png" alt="">
-                <p>Game developed for the <a href="http://portographics.tech/events.php?title=Game%20Jam%202016">Porto graphics Game Jam 2016</a> developed in Unity3D in 32 hours. Honorable mention Winner. Roles included level design, 3D modeling, UI and
-                  asset development. Prototype only: XBox controller required to play.</p>
-                <div class="col-lg-8 mx-auto text-center">
-                  <a href="cv/Displaced.rar" target="_blank" class="btn btn-lg btn-download" style="color:#fff;border: solid 2px#fff;">
-                    <i class="fa fa-download"></i> Download Game
-                  </a>
-                </div>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                        March 2016
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                       Game development, 2D Art, Level Design
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioInterstellar" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto" style="flex: 0 0 100%; max-width: 100%;">
-              <div class="modal-body">
-                <h2>An ode to Interstellar</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://player.vimeo.com/video/196955712" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                <p style="margin-top: 20px;"></p>
-                <img class="img-fluid img-centered" src="img/portfolio/Interstellar/breakdown.png" alt="">
-                <p>3D Video Project for specialized graphics course in FBAUP. The goal was to create a full video to accompany a song of our choosing. I chose Hans Zimmer soundtrack from Interstellar and decided to make an interpretation of the launch sequence
-                  from the movie.</p>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                        January 2017
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                       3D Modeling and Animation, Compositing
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioMurias" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Ameur Murias</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/ameurmurias.png" alt="">
-                <p>Freelance Web Development Project for Law firm in Canada. Designed and developed website and backend systems.</p>
-                <ul class="list-inline item-details">
-                  <li>Visit live here:
-                    <strong>
-                        <a href="http://ameurmurias.com/">AmeurMurias.com</a>
-                      </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                        July 2018
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                        Web Development, Web Design
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioVoxel" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Voxelmaker</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <iframe width="700" height="420" src="https://www.youtube-nocookie.com/embed/7jLIH3wY8i0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <p>University project exploring a possible voxel 3D modeling suite for VR/AR systems. Analysis of the advantages in graphics computing and modeling with the use of voxels vs traditional polygon modeling paradigms.</p>
-                <ul class="list-inline item-details">
-                  <li>Date:
-                    <strong>
-                        March 2015
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                        3D Modeling, Voxels, GPU Programming, VR, AR
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioHalo" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Instalation 01</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/game.png" alt="">
-                <p>Worked as a UI designer for a fan made PC multiplayer shooter game inspired by Microsoft's Halo Games. Roles included Menu and HUD Design as well as other asset creation.</p>
-                <ul class="list-inline item-details">
-                  <li>More info:
-                    <strong>
-                        <a href="https://installation01.org/">Official Website</a>
-                      </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                        July 2016 - December 2016
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                        2D Asset development, Game Design, UI/UX Development
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioTapFleet" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #2a2a3a; color: white; padding: 35px 0;">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr" style="background-color: #757575;">
-            <div class="rl" style="background-color: #757575;"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>TapFleet Mobile Game</h2>
-                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.4);">
-                <p style="font-size: 8px;"> </p>
-                <img class="img-fluid img-centered" src="img/portfolio/tapfleet.png" alt="">
-                <p>User Interface Design for Mobile Space Strategy Game 'TapFleet'. Roles included developing an efficient interface to interact with the game's systems and make it compatible with Unity3D's UI platform. Contract work.</p>
-                <ul class="list-inline item-details">
-                  <li>More Info:
-                    <strong>
-                        <a href="https://tapfleet.tumblr.com/">Development Blog</a>
-                      </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                        February 2016 - June 2016
-                      </strong>
-                  </li>
-                  <li>Skills:
-                    <strong>
-                        User Interface Design, Game Development
-                      </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+                <!-- JavaScript Libraries -->
+                <script src="lib/jquery/jquery.min.js"></script>
+                <script src="lib/jquery/jquery-migrate.min.js"></script>
+                <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="lib/easing/easing.min.js"></script>
+                <script src="lib/superfish/hoverIntent.js"></script>
+                <script src="lib/superfish/superfish.min.js"></script>
+                <script src="lib/wow/wow.min.js"></script>
+                <script src="lib/venobox/venobox.min.js"></script>
+                <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                <script src="lib/typed/typed.min.js"></script>
+                <script src="https://kit.fontawesome.com/c993eeb1e7.js" crossorigin="anonymous"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Template Main Javascript File -->
+                <script src="js/main.js"></script>
 
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+                <!--Load Isotope gallery-->
+                <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
-  <!-- Custom scripts -->
-  <script src="js/freelancer.min.js"></script>
-
+                <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 
 </html>

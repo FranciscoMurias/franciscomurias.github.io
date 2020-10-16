@@ -1,0 +1,88 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/games/Domain/gallery/1.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/Domain/gallery/2.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/Domain/gallery/3.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/Domain/gallery/4.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/Domain/gallery/5.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/Domain/gallery/6.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/Domain/gallery/7.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/games/Domain/gallery/1.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/games/Domain/gallery/2.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="2" class="list-inline-item">
+            <img src="img/games/Domain/gallery/3.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="3" class="list-inline-item">
+            <img src="img/games/Domain/gallery/4.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="4" class="list-inline-item">
+            <img src="img/games/Domain/gallery/5.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="5" class="list-inline-item">
+            <img src="img/games/Domain/gallery/6.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="6" class="list-inline-item">
+            <img src="img/games/Domain/gallery/7.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Domain Conflict</h1>
+                <div class="page-body">
+                    <p id="25e6f404-3249-426f-ab97-0ba5bee7f578" class="">March 2017</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Game developed for the Retro Jam 2017 developed in PICO-8 in 32 hours.</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">First Place Winner!</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Two players battle for control of the domain. "3D"ish implementation in PICO-8.</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Roles included Programming, Art and gameplay Design.</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class=""></p>
+                    <p id="17f661a7-9a51-4b02-b13f-1d3f07763511" class=""><a href="https://franciscomurias.itch.io/domain-conflict">Play it here!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

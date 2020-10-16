@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <video controls autoplay loop width="100%" height="100%" src="img/portfolio/HoudiniTrees/gallery/video1.mp4"></video>
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/HoudiniTrees/gallery/1.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/HoudiniTrees/gallery/2.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/portfolio/HoudiniTrees/gallery/2.png" class="img-fluid">
+            <i class="fa fa-play fa-2x"></i>
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/portfolio/HoudiniTrees/gallery/1.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="2" class="list-inline-item">
+            <img src="img/portfolio/HoudiniTrees/gallery/2.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Procedural Stylized Trees</h1>
+                <p id="601f27f8-9407-4051-89a5-57cab35dda85" class=""><strong>A Houdini system to generate stylized trees.</strong></p>
+                <p id="5fa80033-7df4-44c4-99a0-57335cd3a93d" class="">To be used in any game engine as a tool to ease level design and environment art.</p>
+                <p id="a951c84b-9a77-48d7-b14a-420d2d73fc48" class="">2019</p>
+                <p id="05115acd-d769-45e1-974f-8e1253f6a4db" class="">
+                </p>
+                <p id="dba65e31-88af-4f8b-9698-d8b53942bcc7" class="">The Houdini asset generates variations of trees with a painterly stylized look. All the normals face outwards to achieve the stylized shading effect when lit.</p>
+                <p id="68f2e967-c2a4-4dea-b1ec-a83d158ad02b" class="">
+                </p>
+                <p id="1b9c15a9-e876-4ced-a241-8ddc4c70ee17" class="">insert parameter image here</p>
+                <p id="205aa891-263f-4b2f-aa6b-cb55c8e592fd" class="">
+                </p>
+                <p id="5777b538-3362-4795-a9d5-c6d6e59955ac" class="">A parameter interface can be used in engine to tweak tree generation to the desired specifications.</p>
+                <p id="8b25cde2-a915-4817-80bb-d96808514996" class="">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

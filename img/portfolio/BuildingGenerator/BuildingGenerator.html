@@ -1,0 +1,79 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/portfolio/BuildingGenerator/gallery/1.gif">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/BuildingGenerator/gallery/Houdini.png">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/portfolio/BuildingGenerator/gallery/1.gif" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/portfolio/BuildingGenerator/gallery//Houdini.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Procedural Building Generator</h1>
+                <p id="93d3e4f4-ec12-4feb-a719-0507cee685e2" class=""><strong>A Houdini system for procedurally generating building structures from modular components</strong></p>
+                <p id="ae3aa8fb-e2e6-4558-ace4-26662659e683" class=""><strong>Project developed as part of 3D Games Art Masters Degree</strong></p>
+                <p id="799dfc43-7525-4280-b053-879699b43328" class="">2020</p>
+                <figure id="4c024d20-c5a1-4134-bf11-3b230b36df21" class="image">
+                    <img style="width:900px" src="img/portfolio/BuildingGenerator/article/8uw80zab.bmp" />
+                </figure>
+                <p id="90a616ff-78cc-4c51-9f14-eff26e49b2f6" class="">
+                </p>
+                <p id="bad740ae-a073-458a-b897-401d9a28d9ff" class="">A building generator prototype created using Houdini. The system receives a collection of modular building parts as input and assembles the assets from a defined set of parameters to quickly generate an infinite amount of building variants.</p>
+                <div id="db7d8a65-b3bb-46c2-93cd-3eaf6e050a36" class="column-list">
+                    <div id="7f821e30-c477-49ad-8542-4d37d6863fe4" style="width:50%" class="column">
+                        <figure id="e4d4d818-cea2-422b-a3c3-8b6cc7aa7123" class="image">
+                            <img style="width:240px" src="img/portfolio/BuildingGenerator/article/Untitled.png" />
+                        </figure>
+                    </div>
+                    <div id="b7d72dd5-179d-40aa-8cbf-fd659a6b3a31" style="width:50%" class="column">
+                        <figure id="3d3a8aad-c215-4ad2-bcde-f399fe617936" class="image">
+                            <img style="width:288px" src="img/portfolio/BuildingGenerator/article/Untitled%201.png" />
+                        </figure>
+                    </div>
+                </div>
+                <p id="b9eb2a98-cfba-447b-99aa-40cd7c8feb4b" class="">The generator can function independently of the style of the modular assets, but was tested with a Medieval and a Mayan styled modular collection.</p>
+                <p id="e396f70b-9b16-4d6c-b2ba-660a152349f2" class="">
+                </p>
+                <figure id="c17f468e-08fe-4da3-9142-1dfc2321319e" class="image">
+                    <img style="width:672px" src="img/portfolio/BuildingGenerator/article/Untitled%202.png" />
+                </figure>
+                <p id="2d1e1c38-95e8-4a17-a9de-c801102217e6" class="">The generator creates random grid structures and determines placement positions, attachment points and and normal directions for the modular components. This data can also be exported independently so that the assets can be built entirely
+                    inside the game engine with minimal resource usage.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active ").removeClass("active ");
+        $(".carousel-indicators .list-inline-item ")[$(".carousel-inner .carousel-item.active ").prevAll().length].classList.add("active ");
+    });
+</script>

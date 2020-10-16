@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/resume/PG/thumbnail.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/resume/PG/thumbnail.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Co-Founder and Team Leader / Porto Graphics</h1>
+                <div class="page-body">
+                    <p id="25e6f404-3249-426f-ab97-0ba5bee7f578" class="">Sep 2013 - Jun 2018</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Initial founder of the Computer graphics student group “Porto Graphics”, based at the Department of Computer Science at FCUP, which focused on advancing and promoting the learning of computer graphics and its disciplines, through public
+                        events and activities, such as competitions, workshops, roundtables and talks.</p>
+                    <p id="5e63a630-7603-454d-8c8e-325db0c825fe" class="">Responsible for most of the design and visual presentation of the group, having developed its website and logo identity, and taught various workshops (Photoshop, Blender, User interfaces) and activities. </p>
+                    <p id="1b23abcc-183d-431a-baa7-7a6a44b2c80d" class="">In the last 3 years of its existence, I took up the leadership of the group and led the organization of 3 different game jam events with over a hundred participants each, featuring the support of UPTEC and MNSR.</p>
+                    <p id="fc271d52-7034-459b-9f5b-ec5c88f51c66" class="">
+                    </p>
+                    <figure id="be4e690e-b23b-4225-8a1a-b9cd7e37324c" class="image">
+                        <img style="width:1351px" src="img/resume/PG/article/events.png" />
+
+                    </figure>
+                    <p id="921c8fe6-2757-4f93-991a-75dbaf8af4c3" class="">Although the official website is no longer in operation, the group page can be found <a target="_blank" href="https://www.facebook.com/dcc.PortoGraphics/">here</a>.</p>
+                    <p id="17f661a7-9a51-4b02-b13f-1d3f07763511" class="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

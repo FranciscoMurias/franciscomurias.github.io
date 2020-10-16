@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <div class="carousel-item active h-100 text-center">
+                        <img src="img/portfolio/Treasure/gallery/1.png">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/portfolio/Treasure/gallery/1.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Procedural Treasure</h1>
+                <p id="e18044e6-eb89-4cb2-afd4-559b148cd63a" class="">Procedural treasure coins material developed in Substance Designer as a short exercise.</p>
+                <p id="d2ccfc4f-1cbe-4f28-91fa-73faa55e3c33" class=""><strong>October 2019</strong></p>
+                <p id="56f93c30-1f23-4266-a5c8-8be3b4aea583" class=""></p>
+                <p id="da26c5c0-c4cc-412f-96ca-1a9a10af89da" class="">Used to test an Unreal Engine gameplay mechanic to collect treasure from piles of gold.</p>
+                <p id="cb160fc2-94f7-40a4-804e-fec3311e2b25" class="">I used terrain deformation to deform the piles as the player collides with the treasure.</p>
+                <p id="ab71a708-c85a-4617-a8b8-409b25634346" class=""></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

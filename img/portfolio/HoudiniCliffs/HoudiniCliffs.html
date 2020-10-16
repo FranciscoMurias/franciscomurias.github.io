@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/portfolio/HoudiniCliffs/gallery/1.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/HoudiniCliffs/gallery/2.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/portfolio/HoudiniCliffs/gallery/1.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/portfolio/HoudiniCliffs/gallery/2.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Mesh Driven Cliffs</h1>
+                <p id="2c3f0600-56a4-42b4-9293-ed4c96644a89" class=""><strong>A Houdini system for procedurally generating rock cliff formations from any desired input mesh.</strong></p>
+                <p id="606427d2-26e1-4f6f-b5d6-eb9eff7aaea3" class="">To be used in any game engine as a tool to ease level design and environment art.</p>
+                <p id="c66312da-9d9e-4703-9251-37963b36c7a5" class="">2019</p>
+                <p id="78ccfd11-63d8-4f32-a5db-8c7d446ce683" class="">
+                </p>
+                <p id="0c7b257e-c4a9-49ad-b332-ba04d383e061" class="">A procedural cliff generator prototype created using Houdini. The system takes any 3d mesh as input and generates a realistic rock cliff formation from a defined set of parameters to quickly generate believable assets.</p>
+                <p id="b08603ee-eec9-46f2-ba87-6a9cbec67155" class="">
+                </p>
+                <p id="d458cf72-a018-4100-b2da-87fec6594d89" class="">Interface Image (have to do it) find and finish tutorial</p>
+                <p id="b2002496-820d-46a3-bff4-b6436de520bf" class="">
+                </p>
+                <p id="11dbb7a7-a696-444e-9756-68ac6680fe5e" class="">The user can control the amount of rock layers and other erosion and generation parameters in a convenient interface.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>

@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/portfolio/Portal/gallery/1.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/Portal/gallery/2.png">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/portfolio/Portal/gallery/3.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/portfolio/Portal/gallery/1.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/portfolio/Portal/gallery/2.png" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="2" class="list-inline-item">
+            <img src="img/portfolio/Portal/gallery/3.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Lost Portal Scene</h1>
+                <p id="1af3bdc5-3e1e-4ede-8a0c-44752ac53366" class="">Developed as short learning exercise.</p>
+                <p id="c8ff4b66-c9f6-4b23-a786-f01a3c3a7875" class=""><strong>September 2019</strong></p>
+                <p id="f5bbd286-712d-40aa-b0af-dd9d320f462d" class="">Alien Portal in a swamp environment running in realtime in Blender eevee renderer, developed as a short exercise. Strong emphasis on generative modeling, fog volumes and moody lighting.</p>
+                <p id="9ab150b5-ee66-4638-9641-17a1ca71b1eb" class="">Ground material is fully procedural and uses no textures. Created with blender nodes.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>
