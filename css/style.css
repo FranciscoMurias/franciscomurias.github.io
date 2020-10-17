@@ -821,7 +821,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-color: var(--HighlightColor2);
     color: #fff;
     padding: 10px 0;
-    width: 180px;
+    width: 164px;
     height: 100%;
     display: flex;
     align-items: center;
