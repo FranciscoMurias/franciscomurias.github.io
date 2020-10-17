@@ -1488,7 +1488,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolioModal .carousel-wrapper {
     /* max-height: 70vh; */
-    height: 40vh;
+    height: 35vh;
 }
 
 #portfolioModal .carousel-item img {
@@ -1528,8 +1528,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolioModal .carousel-indicators .list-inline-item {
     text-indent: 0;
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 70px;
     padding: 2px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, .3);
@@ -1614,6 +1614,9 @@ body.mobile-nav-active #mobile-nav-toggle {
         top: 3vh;
         right: 11vh;
     }
+    #portfolioModal .carousel-wrapper {
+        height: 30vh;
+    }
 }
 
 @media (min-width: 635px) {
@@ -1655,7 +1658,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         right: 13vh;
     }
     #portfolioModal .carousel-wrapper {
-        height: 65vh;
+        height: 40vh;
     }
 }
 
@@ -1704,11 +1707,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     #portfolioModal .close {
         right: 16vh;
     }
+    #portfolioModal .carousel-wrapper {
+        height: 48vh;
+    }
 }
 
 @media (min-width: 1420px) {
     #portfolioModal .close {
         right: 17vh;
+    }
+    #portfolioModal .carousel-wrapper {
+        height: 60vh;
     }
 }
 
@@ -1716,11 +1725,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     #portfolioModal .close {
         right: 19vh;
     }
+    #portfolioModal .carousel-wrapper {
+        height: 65vh;
+    }
 }
 
 @media (min-width: 1800px) {
     #portfolioModal .close {
         right: 24vh;
+    }
+    #portfolioModal .carousel-wrapper {
+        height: 70vh;
     }
 }
 
