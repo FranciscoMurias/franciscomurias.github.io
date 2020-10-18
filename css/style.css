@@ -1528,16 +1528,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolioModal .carousel-indicators .list-inline-item {
     text-indent: 0;
-    width: 75px;
-    height: 70px;
+    width: 66px;
+    height: auto;
+    max-height: 63px;
+    min-height: 49px;
     padding: 2px;
-    background: transparent;
+    background: #5151512b;
     border: 1px solid rgba(255, 255, 255, .3);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     margin-bottom: 0.5rem;
+}
+
+#portfolioModal .carousel-indicators .list-inline-item:hover {
+    border: 1px solid rgba(255, 255, 255, 0.589);
+    background: #b9b9b92b;
 }
 
 #portfolioModal .carousel-indicators .list-inline-item.active {
