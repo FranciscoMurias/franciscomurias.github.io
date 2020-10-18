@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
     });
 
     grid.imagesLoaded().progress(function() {
-        grid.isotope('fitRows');
+        grid.isotope('layout');
     });
 
     //Filter Galery Tags
