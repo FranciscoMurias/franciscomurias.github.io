@@ -66,7 +66,8 @@ jQuery(document).ready(function($) {
     const grid = $('.grid').isotope({
         // options
         itemSelector: '.grid-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        percentPosition: true
     });
 
     grid.imagesLoaded().progress(function() {
