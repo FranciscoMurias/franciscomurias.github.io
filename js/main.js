@@ -69,6 +69,10 @@ jQuery(document).ready(function($) {
         layoutMode: 'fitRows'
     });
 
+    grid.imagesLoaded().progress(function() {
+        grid.isotope('fitRows');
+    });
+
     //Filter Galery Tags
     $("#portfolio .portfolio-filter").click(function() {
         $("#portfolio .portfolio-filter").removeClass('active');
