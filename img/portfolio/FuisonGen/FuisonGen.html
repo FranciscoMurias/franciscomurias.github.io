@@ -74,14 +74,102 @@
         <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
             <div class="page-body">
                 <h1 class="page-title">Fusion Energy Generator (UE4)</h1>
+                <p id="6d94604d-8b7a-4028-a3c4-243f70990062" class=""><strong>Project developed for Lighting and Rendering Module at Teesside University. </strong>Strong emphasis on dynamic lighting and moving elements, as well as modular hard surface pieces for quick adaptability of the scene.</p>
+                <p id="ef6dda31-2014-4a13-95cf-ff8c1a2f0338" class=""><strong>May 2019</strong></p>
+                <p id="0be6e974-4ef3-4e6d-8ce6-3fa156d4dbbc" class="">
+                </p>
+                <p id="3bbca246-7916-4dd1-9e3e-6d7ba751ba17" class=""><strong>PROJECT AIMS</strong></p>
+                <p id="3bbca246-7916-4dd1-9e3e-6d7ba751ba17" class="">To create a semi-realistic sci-fi scene, using up-to-date practices such as modular workflows and trim materials, implement a visually interesting and stylized lighting solution featuring dynamic lights, volumetric smoke and particles.</p>
+                <figure id="c34c157d-8b68-4d09-9a2d-9f0d25a51ac4" class="image">
+                    <a href="img/portfolio/FuisonGen/article/Untitled%201.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%201.png" /></a>
+                </figure>
+                <p id="e551c39e-7c64-4926-849c-b1e3fcc1de97" class="">Inspired by several images found on Pinterest, I wanted to feature highly contrasting colors: Red to Blue, having a power source as the Focal object. Other Inspirations from Titanfall 2, Metal Gear Solid V, and Destiny 2.</p>
+                <p id="ca67a457-839b-44b0-ac5c-613a2f55f58f" class="">
+                </p>
+                <p id="f08fae79-dbf0-4853-a63c-08a51933d415" class=""><strong>FRAMING AND BLOCKOUT</strong></p>
+                <p id="f08fae79-dbf0-4853-a63c-08a51933d415" class=""> The structure is based in a hexagonal shape. All the perspective lines point to the focal object, the fusion core, and the environment is populated with long halogen-like lights that indirectly lead the eye to it. The layout consists of
+                    a main platform with consoles, with a walkway leading to the fusion core. Early on, an explorable area below the main platform was also planned to be explorable by the player. However, this was later removed and replaced with pipes
+                    as the time was better spent polishing the focal areas.</p>
+                <p id="8d1c2d73-8636-44d1-9183-faf333b01739" class="">The hexagonal theme that shaped the overall structure worked also as an influence for the shape of the generator platform, as well as the generator frame itself and the hexagonal door. All the elements worked together to create a cohesive
+                    scene.
+                </p>
+                <figure id="4c0a9359-b51c-472c-a8d5-cfafa46b9432" class="image">
+                    <a href="img/portfolio/FuisonGen/article/Untitled%202.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%202.png" /></a>
+                </figure>
+                <p id="e031335f-8b63-4684-8eb5-d19777d9568b" class="">
+                </p>
+                <p id="2c2de0be-a142-474c-855e-7e3e801d537c" class=""><strong>MODELLING</strong></p>
+                <p id="2c2de0be-a142-474c-855e-7e3e801d537c" class=""> After the initial block out, the most important objects were defined, such as the generator, the beam emitters, the bridge and platforms, the terminal computer and the main door. These would be the “focal pieces” of the scene and would
+                    require the most time invested in modelling. I took advantage of techniques such as face weighted normals to better define the shapes and create that distinct hard surface sci fi feel in the mesh. </p>
+                <figure id="0782555a-ad20-4111-ae0a-9aff668bfb82" class="image">
+                    <a href="img/portfolio/FuisonGen/article/Untitled%203.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%203.png" /></a>
+                </figure>
+                <p id="41934fd1-0b17-441e-9f96-884cd2ec7eb9" class="">The angles of the walls were further refined to conform to the hexagonal lines of the scene. For all scenery assets such as the walls, the floor panels, the fans, and the railings, a modular workflow was used, allowing the reusability
+                    of these pieces across the entire scene. All of the walls use the same 3 or 4 modular panel pieces, rotated and flipped around to cover the entire scene and all the floors were designed so that they would interconnect. </p>
+                <figure id="7c1a0134-2a0d-4a68-bdff-44a9d685ef4b" class="image">
+                    <a href="img/portfolio/FuisonGen/article/Untitled%204.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%204.png" /></a>
+                </figure>
+                <figure id="8e83f0d9-4b3e-4393-9115-7da4b839a7e6" class="image">
+                    <a href="img/portfolio/FuisonGen/article/Untitled%205.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%205.png" /></a>
+                </figure>
+                <p id="2bb6547b-07a1-4c1b-a2db-42c31245c02e" class=""><strong>LIGHTING</strong></p>
+                <div id="b320993f-b588-4afa-a475-0343b28e4fbc" class="column-list">
+                    <div id="95735a62-882e-444b-92fa-b9c6bd3caeb2" style="width:43.75%" class="column">
+                        <p id="2bb6547b-07a1-4c1b-a2db-42c31245c02e" class="">The aim was to highlight the player’s attention to the fusion core as the focal point of the scene as well as make use of dynamic lighting to create an interesting scene in the fusion core. Along the hallway the contrasting blue
+                            lights converge, guiding the players attention to the focal object. The halogen lights along the walls and ceiling act as subtle lines pointing to the core. </p>
+                        <p id="37382c65-8d24-4717-afeb-bb2c3bc168ca" class="">For the generator core I added a very bright blue point light in the center and used rotating dynamic lights pointing to it and cast interesting shadows in the walls. I modified the lightning effect blueprint from Unreal’s Alan
+                            Willard to create the electric bolts emitting from the energy core. I wanted the player to walk to the fusion core, so as he approaches the platform an animation is triggered to extend a bridge and light up each of its lights
+                            one by one (
+                            <a href="https://www.youtube.com/watch?v=IRPI3lSACFc" target="_blank">Incredibles style</a>).</p>
+                        <p id="addbc5f4-c67e-49e2-b271-95ddf4d9c3d4" class="">
+                        </p>
+                    </div>
+                    <div id="2eaca2a9-b57b-4bf8-8ee0-355c16e05640" style="width:56.25%" class="column">
+                        <figure id="fb558562-bff3-445a-82cb-4d5b7024b614" class="image">
+                            <a href="img/portfolio/FuisonGen/article/Untitled%206.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%206.png" /></a>
+                        </figure>
+                    </div>
+                </div>
+                <p id="e56f416a-6fd0-4ad4-9d58-2ae6e0d3d23a" class="">The rest of the mood of the scene was extended with the use of Exponential height fog, and a custom volumetric material and particle system to add Volumetric smoke to the fans on the walls, using spotlights to cast the dynamic shadows.</p>
+                <div id="a256cefc-8c86-4c1e-924a-c54aebcd05b3" class="column-list">
+                    <div id="3ccd7843-5290-42a2-85e8-e9b0361704d8" style="width:59%" class="column">
+                        <figure id="da80dacb-ff1a-4bcf-97d6-8697132b7faa" class="image">
+                            <a href="img/portfolio/FuisonGen/article/Untitled%207.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%207.png" /></a>
+                        </figure>
+                    </div>
+                    <div id="002a1514-ba83-4f3a-b08e-b71ab15ee29a" style="width:41%" class="column">
+                        <figure id="500b6098-037c-45ab-83d9-afaeb52439b0" class="image">
+                            <a href="img/portfolio/FuisonGen/article/Untitled%208.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%208.png" /></a>
+                        </figure>
+                        <p id="e716eb87-9f77-4eed-8066-59664017e97e" class="">
+                        </p>
+                    </div>
+                </div>
+                <p id="6c894994-6df7-4d44-a140-f844fa62c811" class="">
+                    Finally, for the computer terminals, a blue spotlight was used to rim light it and fake the light coming from the screens.</p>
+                <figure id="e21cef6f-800a-41dd-95a0-9c7b7d5296a6" class="image">
+                    <a href="img/portfolio/FuisonGen/article/Untitled%209.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/Untitled%209.png" /></a>
+                </figure>
+                <p id="139cc4b1-b6e8-41f0-9e41-be3bc85a2825" class="">
+                </p>
+                <p id="c45e8fe2-4989-417b-89e9-63a92dd04ca4" class=""><strong>POST-PROCESS</strong></p>
+                <p id="c45e8fe2-4989-417b-89e9-63a92dd04ca4" class=""> The final touch up consisted of adjustments to the temperature, tint, contrast, adding a LUT, adjusting the bloom, using a screen dirt mask, and tweaking the exposure (for a heavily stylized look). An essential tweak was to disable unreal’s
+                    auto exposure and disable motion blur and chromatic aberration. Lastly I applied a sharpening filter to the post process volume.</p>
+                <figure id="0ce6878f-fcb0-4a09-9e96-a740d37dd8a3" class="image">
+                    <a href="img/portfolio/FuisonGen/article/Untitled%2010.png"><img style="width:100%" src="img/portfolio/FuisonGen/article/layered.gif" /></a>
+                </figure>
+                <p id="96bc51d2-35a1-4c9c-85cd-f2ac6601f125" class=""><strong>END RESULT AND SELF CRITIQUE</strong>
+                    <p id="96bc51d2-35a1-4c9c-85cd-f2ac6601f125" class=""> This was the first scene I made using unreal engine, and the first time I went through many of the processes of creating game assets from start to finish, not to mention to fully light a scene. Overall, I think I achieved a good result
+                        similar to what I initially aimed for, with a strong emphasis on dynamic lighting and moving elements. The scene evokes a tense feeling of being in a room with a massively powerful object radiating energy.
+                    </p>
+                    <p </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-    $('#carousel1').on('slid.bs.carousel', function() {
-        $(".carousel-indicators .list-inline-item.active").removeClass("active");
-        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
-    });
-</script>
+    <script>
+        $('#carousel1').on('slid.bs.carousel', function() {
+            $(".carousel-indicators .list-inline-item.active").removeClass("active");
+            $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+        });
+    </script>
