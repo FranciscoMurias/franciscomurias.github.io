@@ -1740,7 +1740,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 1800px) {
     #portfolioModal .close {
-        right: 24vh;
+        right: 28vh;
     }
     #portfolioModal .carousel-wrapper {
         height: 70vh;
