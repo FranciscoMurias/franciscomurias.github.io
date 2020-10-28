@@ -1180,6 +1180,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 12px;
     border-radius: 50%;
     background-color: #ddd;
+    outline: none;
 }
 
 #jams .owl-dot.active {
