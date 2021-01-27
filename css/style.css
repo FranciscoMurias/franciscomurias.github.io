@@ -1494,19 +1494,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 35vh;
 }
 
-#portfolioModal .carousel-item img {
+#portfolioModal .carousel-item img,
+#portfolioModal .carousel-item video {
     object-fit: contain;
     height: 100%;
     width: 100%;
+}
+
+#portfolioModal .carousel-item img.nostretch {
+    max-width: max-content;
 }
 
 #portfolioModal .carousel-item iframe {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-}
-
-#portfolioModal .carousel-item video {
     object-fit: contain;
     height: 100%;
     width: 100%;
