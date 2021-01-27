@@ -1495,27 +1495,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolioModal .carousel-item img {
-    max-height: 100%;
-    max-width: 100%;
-    transform: translateY(-50%);
-    top: 50%;
-    position: relative;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 #portfolioModal .carousel-item iframe {
-    max-height: 100%;
-    max-width: 100%;
-    transform: translateY(-50%);
-    top: 50%;
-    position: relative;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 #portfolioModal .carousel-item video {
-    max-height: 100%;
-    max-width: 100%;
-    transform: translateY(-50%);
-    top: 50%;
-    position: relative;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 #portfolioModal .carousel-indicators {
