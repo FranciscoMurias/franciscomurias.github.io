@@ -1,0 +1,87 @@
+<div class="row">
+    <div class="carousel-wrapper w-100">
+        <div id="carousel1" class="carousel slide h-100" data-ride="true" data-interval="false">
+            <!-- data-interval=5000 -->
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 text-center">
+                    <img src="img/games/TeatherNFeather/gallery/1.jpg">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/TeatherNFeather/gallery/2.jpg">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/TeatherNFeather/gallery/3.jpg">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/TeatherNFeather/gallery/4.jpg">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/TeatherNFeather/gallery/5.jpg">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/TeatherNFeather/gallery/6.jpg">
+                </div>
+                <div class="carousel-item h-100 text-center">
+                    <img src="img/games/TeatherNFeather/gallery/7.png">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <ul class="carousel-indicators w-100">
+        <li class="active list-inline-item" data-target="#carousel1" data-slide-to="0">
+            <img src="img/games/TeatherNFeather/gallery/1.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="1" class="list-inline-item">
+            <img src="img/games/TeatherNFeather/gallery/2.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="2" class="list-inline-item">
+            <img src="img/games/TeatherNFeather/gallery/3.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="3" class="list-inline-item">
+            <img src="img/games/TeatherNFeather/gallery/4.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="4" class="list-inline-item">
+            <img src="img/games/TeatherNFeather/gallery/5.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="5" class="list-inline-item">
+            <img src="img/games/TeatherNFeather/gallery/6.jpg" class="img-fluid">
+        </li>
+        <li data-target="#carousel1" data-slide-to="6" class="list-inline-item">
+            <img src="img/games/TeatherNFeather/gallery/7.png" class="img-fluid">
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="modal-details">
+        <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+            <div class="page-body">
+                <h1 class="page-title">Teather n' Feather</h1>
+                <div class="page-body">
+                    <p id="25e6f404-3249-426f-ab97-0ba5bee7f578" class="">2021</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Submitted for GMTK Game Jam 2021.</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Developed in 48 hours from the theme "Tied together".</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Tether n' Feather is a 3D puzzle platformer game where you must guide two adorable parrots through relaxing and colorful islands.</p>
+                    <p id="2274d959-ad5b-4963-9a22-778d39e02fd7" class="">Tied together, it's your job to make sure that they each safely arrive to their hot air balloon nest. Explore the tether and swing mechanic to glide away through these whimsical levels.</p>
+                    <p id="17f661a7-9a51-4b02-b13f-1d3f07763511" class=""><a href="https://franciscomurias.itch.io/tetherfeather">Itch.io Page</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#carousel1').on('slid.bs.carousel', function() {
+        $(".carousel-indicators .list-inline-item.active").removeClass("active");
+        $(".carousel-indicators .list-inline-item")[$(".carousel-inner .carousel-item.active").prevAll().length].classList.add("active");
+    });
+</script>
