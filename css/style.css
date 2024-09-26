@@ -127,6 +127,10 @@ h6 {
     display: none;
 }
 
+.grid-item.portfolio-item {
+    border-radius: 5px;
+    overflow: hidden;
+}
 
 /* Prelaoder */
 
