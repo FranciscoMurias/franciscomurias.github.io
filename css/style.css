@@ -931,6 +931,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 # About Section
 --------------------------------------------------------------*/
 
+
+.pseudo-link {
+    color: var(--LinksColor);
+    /* Bootstrap primary blue color */
+    cursor: pointer;
+}
+
 #about {
     background-color: var(--BG4Color);
     position: relative;
