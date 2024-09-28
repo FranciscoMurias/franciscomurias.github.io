@@ -56,10 +56,10 @@ jQuery(document).ready(function($) {
         var typed_strings = $('.text-slider-items').text();
         var typed = new Typed('.text-slider', {
             strings: typed_strings.split(','),
-            typeSpeed: 80,
+            typeSpeed: 20,
             loop: true,
             backDelay: 1100,
-            backSpeed: 30
+            backSpeed: 10
         });
     }
 
@@ -191,3 +191,285 @@ jQuery(document).ready(function($) {
     });
 
 });
+
+const games = [
+    {
+        title: 'FingerFlipSunset',
+        mainImage: 'img/games/FingerFlipSunset/thumbnail.png',
+        video: 'img/games/FingerFlipSunset/video.mp4',
+        sideImages: ['img/games/FingerFlipSunset/thumbnail.png', 'img/games/res/gmtk24.png'],
+        year: 2024,
+        award: '',
+        description: "An arcade platformer inspired by everyone's back seat childhood roadtrip window imagination. \n Created in four days, this game embodies the 'Build to Scale' theme by playing with depth and perspective. ",
+        downloadLink: 'https://franciscomurias.itch.io/fingerflip-sunset'
+    },
+    {
+        title: 'TeatherNFeather',
+        mainImage: 'img/games/TeatherNFeather/thumbnail.png',
+        video: '',
+        gallery: [
+            'img/games/TeatherNFeather/gallery/1.jpg',
+            'img/games/TeatherNFeather/gallery/2.jpg',
+            'img/games/TeatherNFeather/gallery/3.jpg',
+            'img/games/TeatherNFeather/gallery/4.jpg',
+            'img/games/TeatherNFeather/gallery/5.jpg',
+            'img/games/TeatherNFeather/gallery/6.jpg',
+            'img/games/TeatherNFeather/gallery/7.png',
+        ],
+        sideImages: ['img/games/TeatherNFeather/thumbnail.png', 'img/games/res/gmtk21.png'],
+        year: 2021,
+        award: 'Game Jam Winner',
+        description: 'Developed in 48 hours from the theme "Tied together" and Winner of the 2021 GMTK Game Jam with around 6 thousand games submitted. \n Tether n\' Feather is a 3D puzzle platformer game where you must guide two adorable parrots through relaxing and colorful islands.',
+        downloadLink: 'https://franciscomurias.itch.io/tetherfeather'
+    },
+    {
+        title: 'FlowState',
+        mainImage: 'img/games/FlowState/thumbnail.png',
+        video: '',
+        gallery: [
+            'img/games/FlowState/gallery/1.gif',
+            'img/games/FlowState/gallery/2.gif',
+            'img/games/FlowState/gallery/3.gif',
+            'img/games/FlowState/gallery/4.gif',
+            'img/games/FlowState/gallery/5.gif',
+            'img/games/FlowState/gallery/1.jpg',
+            'img/games/FlowState/gallery/2.jpg',
+            'img/games/FlowState/gallery/3.jpg',
+            'img/games/FlowState/gallery/4.jpg',
+        ],
+        sideImages: ['img/games/FlowState/thumbnail.png', 'img/games/res/ggj.png'],
+        year: 2021,
+        award: '',
+        description: "Don't lose your flow. Parkour runner game in an about using your power to chose which parts of the level appear and disappear and keep your momentum. \n Made in two days from the theme 'Lost and Found'.",
+        downloadLink: 'https://franciscomurias.itch.io/flow-state'
+    },
+    {
+        title: 'BendingSpacetime',
+        mainImage: 'img/games/BendingSpacetime/thumbnail.png',
+        video: 'img/games/BendingSpacetime/video1.webm',
+        sideImages: ['img/games/BendingSpacetime/thumbnail.png', 'img/games/res/mnj20.png'],
+        year: 2020,
+        award: '',
+        description: "In the space anomaly, be the last ship standing when space collapses on itself. \n 3D survival shooter in space. \n Developed in 32 hours for the Mix and Jam Game Jam 2020 in Unity.",
+        downloadLink: 'https://infinitydragoon.itch.io/bending-spacetime'
+    },
+    {
+        title: 'OverNOut',
+        mainImage: 'img/games/OverNOut/thumbnail.png',
+        video: '',
+        gallery: [
+            'img/games/OverNOut/gallery/1.png',
+            'img/games/OverNOut/gallery/2.jpg',
+            'img/games/OverNOut/gallery/3.png',
+        ],
+        sideImages: ['img/games/OverNOut/thumbnail.png', 'img/games/res/gmtk20.png'],
+        year: 2020,
+        award: '',
+        description: '*roger, do you copy?* A Museum Heist gone out of control! Guide a cat through a museum exhibit and steal the precious artifact. \n Developed in 72 hours for the GMTK Game Jam 2020.',
+        downloadLink: 'https://franciscomurias.itch.io/over-n-out'
+    },
+    {
+        title: 'Shadowcasters',
+        mainImage: 'img/games/Shadowcasters/thumbnail.png',
+        video: '',
+        gallery: [
+            'img/games/Shadowcasters/gallery/2.png',
+            'img/games/Shadowcasters/gallery/3.png',
+        ],
+        sideImages: ['img/games/Shadowcasters/thumbnail.png', 'img/games/res/tugcsgj.png'],
+        year: 2019  ,
+        award: '1st Place Winner',
+        description: 'In the spirit of Halloween, witches use their spells to cast out the shadows and battle it out in this bomberman inspired game! \n Inspired by Jakub Wasilewski shadow shader implementation in PICO- 8.\nWinner of Teesside Game Jam 2019, made in 2 days with much love!',
+        downloadLink: 'https://franciscomurias.itch.io/shadowcasters'
+    },
+    {
+        title: 'Domain',
+        mainImage: 'img/games/Domain/thumbnail.png',
+        video: '',
+        gallery: [
+            'img/games/Domain/gallery/4.png',
+            'img/games/Domain/gallery/3.png',
+            'img/games/Domain/gallery/5.png',
+            'img/games/Domain/gallery/6.png',
+            'img/games/Domain/gallery/7.png',
+        ],
+        sideImages: ['img/games/Domain/thumbnail.png', 'img/games/res/retrojam.png'],
+        year: 2017,
+        award: '1st Place Winner',
+        description: 'Two players battle for control of the domain. "3D"ish implementation in PICO-8. \n Winner of the Retro Jam 2017, made in 32 hours with much love.',
+        downloadLink: 'https://franciscomurias.itch.io/domain-conflict'
+    },
+    {
+        title: 'DungeonBombers',
+        mainImage: 'img/games/DungeonBombers/thumbnail.png',
+        video: '',
+        gallery: [
+            'img/games/DungeonBombers/gallery/2.png',
+            'img/games/DungeonBombers/gallery/3.png',
+            'img/games/DungeonBombers/gallery/4.gif',
+        ],
+        sideImages: ['img/games/DungeonBombers/thumbnail.png', ''],
+        year: 2018,
+        award: '',
+        description: ' Small personal project consisting of a bomberman like game made with Love2D (lua). \n Meant to practice the skills required to produce all the art, code and music for a simple yet juicy and polished game.',
+        downloadLink: 'https://github.com/FranciscoMurias/DungeonBomber'
+    },
+    {
+        title: 'Reset',
+        mainImage: 'img/games/Reset/thumbnail2.png',
+        video: '',
+        gallery: [
+            'img/games/Reset/thumbnail2.png',
+        ],
+        sideImages: ['img/games/Reset/thumbnail.png', 'img/games/res/pggj2015.png'],
+        year: 2015,
+        award: '2nd Place Winner',
+        description: 'Game developed for the Porto graphics Game Jam 2015 developed in Unity in 32 hours. \n This was my first developed videogame, at my first game jam.',
+        downloadLink: './assets/RESET.zip'
+    },
+    {
+        title: 'Displaced',
+        mainImage: 'img/games/Displaced/thumbnail.png',
+        gallery: [
+            'img/games/Displaced/thumbnail.png',
+        ],
+        sideImages: ['img/games/Displaced/thumbnail.png', 'img/games/res/pggj2016.png'],
+        year: 2016,
+        award: 'Honorable Mention',
+        description: 'Game developed for the Porto Graphics Game Jam 2016 developed in Unity in 32 hours. \nHonorable mention Winner for Creativity and Adaptation to theme.',
+        downloadLink: './assets/Displaced.rar'
+    },
+];
+
+let currentIndex = 0;
+let isTransitioning = false;
+
+function updateGame(index) {
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    const gamejamInfo = document.querySelector('.gamejam-info');
+    gamejamInfo.classList.add('fade-out');
+
+    setTimeout(() => {
+        const game = games[index];
+        const mainMediaContainer = document.getElementById('gamejam-main-media');
+
+
+        // Clear previous content
+        mainMediaContainer.innerHTML = '';
+
+        if (game.video) {
+            // If there's a video, create and append video element
+            const videoElement = document.createElement('video');
+            videoElement.src = game.video;
+            videoElement.className = 'gamejam-main-video';
+            videoElement.autoplay = true;
+            videoElement.muted = true;
+            videoElement.loop = true;
+            videoElement.playsInline = true;
+            mainMediaContainer.appendChild(videoElement);
+        } else if (game.gallery && game.gallery.length > 0) {
+            // If there's a gallery, create and append slideshow
+            const slideshowElement = document.createElement('div');
+            slideshowElement.id = 'gamejam-slideshow';
+            game.gallery.forEach((imageSrc, i) => {
+                const img = document.createElement('img');
+                img.src = imageSrc;
+                img.classList.add('slideshow-image');
+                if (i === 0) img.classList.add('active');
+                slideshowElement.appendChild(img);
+            });
+            mainMediaContainer.appendChild(slideshowElement);
+            startSlideshow();
+        }
+
+        // Update other game details
+        document.querySelector('.gamejam-year span').textContent = game.year;
+
+        // Update award
+        const awardContainer = document.querySelector('.award-container');
+        const awardSpan = document.querySelector('.gamejam-award span');
+        if (game.award && game.award.trim() !== '') {
+            awardSpan.textContent = game.award;
+            awardContainer.style.display = 'inline-flex';
+            awardContainer.classList.add('shimmer-effect');
+        } else {
+            awardContainer.style.display = 'none';
+            awardContainer.classList.remove('shimmer-effect');
+        }
+
+        document.querySelector('.gamejam-description').innerHTML = game.description.replace(/\n/g, '<br>');
+
+        // Update side images
+        const sideImages = document.querySelectorAll('.gamejam-side-image');
+        sideImages[0].src = game.sideImages[0];
+        sideImages[1].src = game.sideImages[1];
+
+        // Update active tab
+        document.querySelectorAll('.gamejam-tab').forEach((tab, idx) => {
+            tab.classList.toggle('active', idx === index);
+        });
+
+        // Update download button
+        const downloadButton = document.getElementById('game-download');
+        if (game.downloadLink && game.downloadLink !== '#') {
+            downloadButton.href = game.downloadLink;
+            downloadButton.style.display = 'inline-block';
+            downloadButton.target = "_blank";
+        } else {
+            downloadButton.style.display = 'none';
+        }
+
+        // Fade in the content
+        gamejamInfo.classList.remove('fade-out');
+        isTransitioning = false;
+    }, 300); // This timeout should match the transition duration in CSS
+}
+
+function startSlideshow() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slideshow-image');
+
+    if (slides.length > 1) {
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 2600); // Change slide every 3 seconds
+    }
+}
+
+function createTabs() {
+    const tabsContainer = document.querySelector('.gamejam-tabs');
+    games.forEach((game, index) => {
+        const tab = document.createElement('img');
+        tab.classList.add('gamejam-tab');
+        tab.src = game.mainImage;
+        tab.alt = game.title;
+        tab.addEventListener('click', () => {
+            currentIndex = index;
+            updateGame(currentIndex);
+        });
+        tabsContainer.appendChild(tab);
+    });
+}
+
+document.querySelector('.gamejam-prev-btn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + games.length) % games.length;
+    updateGame(currentIndex);
+});
+
+document.querySelector('.gamejam-next-btn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % games.length;
+    updateGame(currentIndex);
+});
+
+// Make sure to call updateGame(0) when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    updateGame(0);
+});
+
+createTabs();
+updateGame(currentIndex);
+
