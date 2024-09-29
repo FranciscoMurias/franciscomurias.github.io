@@ -484,36 +484,70 @@ $('#portfolioModal').on('show.bs.modal', function () {
     });
 });
 
+// Function to customize carousel behavior
 function customizeCarousel(modal) {
-    // Find all indicator items within the modal
+    var carousel = $(modal).find('.carousel');
     var indicators = $(modal).find('.carousel-indicators .list-inline-item');
 
-    // Add click event listener to each indicator
-    indicators.on('click', function (e) {
-        e.preventDefault(); // Prevent default action
-        e.stopPropagation(); // Stop event from bubbling up
+    // Function to update active indicator and slide
+    function updateCarouselAndIndicator(index) {
+        // Immediately move to the desired slide
+        carousel.carousel('pause');
+        carousel.carousel(index);
 
-        // Remove 'active' class from all indicators
+        // Update indicators
         indicators.removeClass('active');
+        indicators.eq(index).addClass('active');
+    }
 
-        // Add 'active' class to clicked indicator immediately
-        $(this).addClass('active');
+    // Remove existing event listeners
+    indicators.off('click');
+    $(modal).find('.carousel-control-prev, .carousel-control-next').off('click');
+    carousel.off('slide.bs.carousel slid.bs.carousel');
 
-        // Get the slide index
-        var slideIndex = $(this).data('slide-to');
+    // Update carousel immediately when indicator is clicked
+    indicators.on('click', function (e) {
+        e.preventDefault();
+        var index = $(this).data('slide-to');
+        updateCarouselAndIndicator(index);
+    });
 
-        // Manually move the carousel
-        $(modal).find('.carousel').carousel(slideIndex);
+    // Update carousel when prev button is clicked
+    $(modal).find('.carousel-control-prev').on('click', function (e) {
+        e.preventDefault();
+        var index = carousel.find('.carousel-item.active').index();
+        var prevIndex = (index - 1 + carousel.find('.carousel-item').length) % carousel.find('.carousel-item').length;
+        updateCarouselAndIndicator(prevIndex);
+    });
+
+    // Update carousel when next button is clicked
+    $(modal).find('.carousel-control-next').on('click', function (e) {
+        e.preventDefault();
+        var index = carousel.find('.carousel-item.active').index();
+        var nextIndex = (index + 1) % carousel.find('.carousel-item').length;
+        updateCarouselAndIndicator(nextIndex);
+    });
+
+    // Restart carousel cycling when mouse leaves
+    carousel.on('mouseleave', function () {
+        carousel.carousel('cycle');
     });
 }
 
-// Modify the modal show event to use this function
+// The rest of your code remains the same
 $('#portfolioModal').on('show.bs.modal', function () {
-    var modal = this;
-    $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`, function () {
-        $(this).find('.modal-title').text(modal.dataset.title);
+    // ... (unchanged)
+});
 
-        // Apply custom behavior to carousel after content is loaded
-        customizeCarousel(modal);
-    });
+$('#portfolioModal').on('shown.bs.modal', function () {
+    customizeCarousel(this);
+});
+
+// The rest of your code remains the same
+$('#portfolioModal').on('show.bs.modal', function () {
+    // ... (unchanged)
+});
+
+$('#portfolioModal').on('shown.bs.modal', function () {
+    customizeCarousel(this);
 });
