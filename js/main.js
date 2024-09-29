@@ -491,46 +491,33 @@ function customizeCarousel(modal) {
     var carousel = $(modal).find('.carousel');
     var indicators = $(modal).find('.carousel-indicators .list-inline-item');
 
-    // Function to update active indicator and slide
     function updateCarouselAndIndicator(index) {
-        // Immediately move to the desired slide
         carousel.carousel('pause');
         carousel.carousel(index);
-
-        // Update indicators
         indicators.removeClass('active');
         indicators.eq(index).addClass('active');
     }
 
-    // Remove existing event listeners
-    indicators.off('click');
-    $(modal).find('.carousel-control-prev, .carousel-control-next').off('click');
-    carousel.off('slide.bs.carousel slid.bs.carousel');
-
-    // Update carousel immediately when indicator is clicked
-    indicators.on('click', function (e) {
+    indicators.off('click').on('click', function (e) {
         e.preventDefault();
         var index = $(this).data('slide-to');
         updateCarouselAndIndicator(index);
     });
 
-    // Update carousel when prev button is clicked
-    $(modal).find('.carousel-control-prev').on('click', function (e) {
+    $(modal).find('.carousel-control-prev').off('click').on('click', function (e) {
         e.preventDefault();
         var index = carousel.find('.carousel-item.active').index();
         var prevIndex = (index - 1 + carousel.find('.carousel-item').length) % carousel.find('.carousel-item').length;
         updateCarouselAndIndicator(prevIndex);
     });
 
-    // Update carousel when next button is clicked
-    $(modal).find('.carousel-control-next').on('click', function (e) {
+    $(modal).find('.carousel-control-next').off('click').on('click', function (e) {
         e.preventDefault();
         var index = carousel.find('.carousel-item.active').index();
         var nextIndex = (index + 1) % carousel.find('.carousel-item').length;
         updateCarouselAndIndicator(nextIndex);
     });
 
-    // Restart carousel cycling when mouse leaves
     carousel.on('mouseleave', function () {
         carousel.carousel('cycle');
     });
@@ -538,22 +525,31 @@ function customizeCarousel(modal) {
 
 $(document).ready(function () {
     function scrollModalToTop(modal) {
-        $(modal).find('.simplebar-content-wrapper').scrollTop(0);
+        setTimeout(function () {
+            var scrollElement = $(modal).find('.simplebar-content-wrapper');
+            if (scrollElement.length) {
+                scrollElement.scrollTop(0);
+            } else {
+                $(modal).find('.modal-body').scrollTop(0);
+            }
+        }, 100);
     }
 
     $('#portfolioModal').on('show.bs.modal', function () {
         var modal = this;
-        // Clear previous content and show loading indicator
-        $(this).find('.modal-body').html('<p>Loading...</p>');
+        $(this).find('.modal-body').empty().html('<p>Loading...</p>');
         $(this).find('.modal-title').text('');
 
-        // Load new content
         $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`, function () {
             $(this).find('.modal-title').text(modal.dataset.title);
+            customizeCarousel(modal);
+            scrollModalToTop(modal);
         });
     });
 
-    $('#portfolioModal').on('shown.bs.modal', function () {
-        scrollModalToTop(this);
+    $('#portfolioModal').on('hide.bs.modal', function () {
+        $(this).find('video').each(function () {
+            this.pause();
+        });
     });
 });
