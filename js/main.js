@@ -188,8 +188,10 @@ jQuery(document).ready(function($) {
 
         $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`);
         $(this).find('.modal-title').text(this.dataset.title);
+        $(this).find('.modal-content').scrollTop(0);
     });
 
+    
 });
 
 const games = [
@@ -534,20 +536,24 @@ function customizeCarousel(modal) {
     });
 }
 
-// The rest of your code remains the same
-$('#portfolioModal').on('show.bs.modal', function () {
-    // ... (unchanged)
-});
+$(document).ready(function () {
+    function scrollModalToTop(modal) {
+        $(modal).find('.simplebar-content-wrapper').scrollTop(0);
+    }
 
-$('#portfolioModal').on('shown.bs.modal', function () {
-    customizeCarousel(this);
-});
+    $('#portfolioModal').on('show.bs.modal', function () {
+        var modal = this;
+        // Clear previous content and show loading indicator
+        $(this).find('.modal-body').html('<p>Loading...</p>');
+        $(this).find('.modal-title').text('');
 
-// The rest of your code remains the same
-$('#portfolioModal').on('show.bs.modal', function () {
-    // ... (unchanged)
-});
+        // Load new content
+        $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`, function () {
+            $(this).find('.modal-title').text(modal.dataset.title);
+        });
+    });
 
-$('#portfolioModal').on('shown.bs.modal', function () {
-    customizeCarousel(this);
+    $('#portfolioModal').on('shown.bs.modal', function () {
+        scrollModalToTop(this);
+    });
 });
