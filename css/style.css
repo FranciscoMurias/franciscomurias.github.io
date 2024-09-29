@@ -151,20 +151,19 @@ h6 {
 .back-to-top {
     position: fixed;
     display: none;
-    background: var(--LinksColor);
+    background: #0000;
     color: #fff;
     width: 40px;
     height: 40px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 6px;
     right: 15px;
     bottom: 15px;
     transition: background 0.5s ease-in-out;
 }
 
 .back-to-top i {
-    font-size: 24px;
-    padding-top: 6px;
+    font-size: 40px;
 }
 
 .back-to-top:focus {
@@ -1827,8 +1826,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Modal Section
 --------------------------------------------------------------*/
 
+.modal.fade .modal-dialog {
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
 .modal.show .modal-dialog {
-    box-shadow: 0 0 7px 1px #717171ba;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: scale(1) translateY(0);
+    opacity: 1;
 }
 
 .modal-header {
@@ -1893,7 +1901,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolioModal .simplebar-track.simplebar-vertical {
-    background: #000000b0;
+    background: #0000;
 }
 
 #portfolioModal .carousel-wrapper {
@@ -1937,21 +1945,32 @@ body.mobile-nav-active #mobile-nav-toggle {
     min-height: 49px;
     padding: 2px;
     background: #5151512b;
-    border: 1px solid rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, .2);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     margin-bottom: 0.5rem;
+    border-radius: 5px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease; 
 }
 
 #portfolioModal .carousel-indicators .list-inline-item:hover {
     border: 1px solid rgba(255, 255, 255, 0.589);
     background: #b9b9b92b;
+    transform: scale(1.04);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 #portfolioModal .carousel-indicators .list-inline-item.active {
     border-color: rgba(255, 255, 255, .9);
+    transform: scale(1.04);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#portfolioModal .carousel-indicators .list-inline-item:hover,
+#portfolioModal .carousel-indicators .list-inline-item.active {
+    z-index: 2;
 }
 
 #portfolioModal .carousel-indicators .list-inline-item img {

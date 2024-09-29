@@ -473,3 +473,47 @@ document.addEventListener('DOMContentLoaded', () => {
 createTabs();
 updateGame(currentIndex);
 
+
+$('#portfolioModal').on('show.bs.modal', function () {
+    var modal = this;
+    $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`, function () {
+        $(this).find('.modal-title').text(modal.dataset.title);
+
+        // Apply custom behavior to carousel after content is loaded
+        customizeCarousel(modal);
+    });
+});
+
+function customizeCarousel(modal) {
+    // Find all indicator items within the modal
+    var indicators = $(modal).find('.carousel-indicators .list-inline-item');
+
+    // Add click event listener to each indicator
+    indicators.on('click', function (e) {
+        e.preventDefault(); // Prevent default action
+        e.stopPropagation(); // Stop event from bubbling up
+
+        // Remove 'active' class from all indicators
+        indicators.removeClass('active');
+
+        // Add 'active' class to clicked indicator immediately
+        $(this).addClass('active');
+
+        // Get the slide index
+        var slideIndex = $(this).data('slide-to');
+
+        // Manually move the carousel
+        $(modal).find('.carousel').carousel(slideIndex);
+    });
+}
+
+// Modify the modal show event to use this function
+$('#portfolioModal').on('show.bs.modal', function () {
+    var modal = this;
+    $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`, function () {
+        $(this).find('.modal-title').text(modal.dataset.title);
+
+        // Apply custom behavior to carousel after content is loaded
+        customizeCarousel(modal);
+    });
+});
