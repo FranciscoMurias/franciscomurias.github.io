@@ -1495,6 +1495,30 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
+@media (max-width: 768px) {
+    #jams {
+        padding: 0 !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    #jams .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: none !important;
+        width: 100% !important;
+    }
+
+    #jams .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #jams [class*="col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
 
 
 /*--------------------------------------------------------------
