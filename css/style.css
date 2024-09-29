@@ -559,11 +559,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #intro .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 #intro .intro-container {
@@ -587,6 +594,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     flex-direction: column;
     text-align: left;
     padding: 0 15px;
+    z-index: 2;
 }
 
 #intro h1 {
