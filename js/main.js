@@ -343,6 +343,12 @@ const games = [
     },
 ];
 
+//specialty links
+var specialLinks = {
+    "Winner of the 2021 GMTK Game Jam": "https://youtu.be/9U4Zoagd_40?t=643",
+    // Add more entries here as needed
+};
+
 let currentIndex = 0;
 let isTransitioning = false;
 
@@ -401,7 +407,17 @@ function updateGame(index) {
             awardContainer.classList.remove('shimmer-effect');
         }
 
-        document.querySelector('.gamejam-description').innerHTML = game.description.replace(/\n/g, '<br>');
+        // Update description
+        const descriptionElement = document.querySelector('.gamejam-description');
+        let description = game.description.replace(/\n/g, '<br>');
+
+        // Check for special links
+        Object.keys(specialLinks).forEach(key => {
+            const regex = new RegExp(key, 'g');
+            description = description.replace(regex, `<a href="${specialLinks[key]}" target="_blank">${key}</a>`);
+        });
+
+        descriptionElement.innerHTML = description;
 
         // Update side images
         const sideImages = document.querySelectorAll('.gamejam-side-image');
@@ -521,6 +537,7 @@ function customizeCarousel(modal) {
     carousel.on('mouseleave', function () {
         carousel.carousel('cycle');
     });
+    
 }
 
 $(document).ready(function () {
