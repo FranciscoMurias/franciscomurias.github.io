@@ -801,6 +801,27 @@ body.mobile-nav-active #mobile-nav-toggle {
     transition-duration: 0.4s;
 }
 
+.more-button {
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.more-button:hover,
+.more-button:focus {
+    opacity: 1;
+    transform: scale(1.1);
+    outline: none;
+    box-shadow: none;
+    background: none;
+}
+
+.more-button i {
+    font-size: 26px;
+}
+
 
 /*--------------------------------------------------------------
 # Experience Section

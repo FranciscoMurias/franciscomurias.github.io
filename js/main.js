@@ -67,9 +67,17 @@ jQuery(document).ready(function($) {
         // options
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
-        percentPosition: true
+        percentPosition: true,
+        filter: '.portfolio-featured'
     });
 
+    // Function to update "More" button visibility
+    function updateMoreButtonVisibility() {
+        const isAllActive = $('.portfolio-filter[data-filter=".portfolio-featured"]').hasClass('active');
+        $('.more-button').toggle(isAllActive);
+    }
+
+    updateMoreButtonVisibility();
     grid.imagesLoaded().progress(function() {
         grid.isotope('layout');
     });
@@ -86,6 +94,8 @@ jQuery(document).ready(function($) {
         //setTimeout(function() {
         //$("#portfolio-wrapper").fadeTo(300, 1);
         //}, 300);
+        updateMoreButtonVisibility();
+
     });
 
 
