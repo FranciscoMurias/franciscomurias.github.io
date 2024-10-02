@@ -188,20 +188,33 @@ jQuery(document).ready(function($) {
     });
 
 
-    $(".portfolio-element").on("click", function() {
-        document.getElementById("portfolioModal").dataset.portfolio = this.dataset.portfolio;
-        document.getElementById("portfolioModal").dataset.type = this.dataset.type;
-        document.getElementById("portfolioModal").dataset.title = "";
+    $(".portfolio-element").on("click", function () {
+        var modal = document.getElementById("portfolioModal");
+        modal.dataset.portfolio = this.dataset.portfolio;
+        modal.dataset.type = this.dataset.type;
+        modal.dataset.title = this.querySelector('.details h3').textContent;
+        modal.dataset.subfolder = this.dataset.subfolder || "";
     });
 
-    $('#portfolioModal').on('show.bs.modal', function() {
+    $('#portfolioModal').on('show.bs.modal', function () {
+        var modal = this;
+        $(this).find('.modal-body').empty().html('<p>Loading...</p>');
+        $(this).find('.modal-title').text('');
 
-        $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`);
-        $(this).find('.modal-title').text(this.dataset.title);
-        $(this).find('.modal-content').scrollTop(0);
+        var pathToLoad = this.dataset.subfolder
+            ? `img/${this.dataset.type}/${this.dataset.subfolder}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`
+            : `img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`;
+
+        $(this).find('.modal-body').load(pathToLoad, function (response, status, xhr) {
+            if (status == "error") {
+                console.log("Error loading content:", xhr.status, xhr.statusText);
+                $(this).html('<p>Error loading content. Please try again.</p>');
+            } else {
+                $(modal).find('.modal-title').text(modal.dataset.title);
+            }
+        });
     });
-
-    
+   
 });
 
 const games = [
@@ -522,6 +535,17 @@ function customizeCarousel(modal) {
         carousel.carousel(index);
         indicators.removeClass('active');
         indicators.eq(index).addClass('active');
+
+        // Check if the new active item is a video and play it
+        playVideoIfPresent(carousel.find('.carousel-item').eq(index));
+    }
+
+    function playVideoIfPresent(carouselItem) {
+        var video = carouselItem.find('video')[0];
+        if (video) {
+            video.currentTime = 0; // Reset video to start
+            video.play();
+        }
     }
 
     indicators.off('click').on('click', function (e) {
@@ -544,10 +568,23 @@ function customizeCarousel(modal) {
         updateCarouselAndIndicator(nextIndex);
     });
 
+    carousel.on('slid.bs.carousel', function () {
+        var activeItem = $(this).find('.carousel-item.active');
+        playVideoIfPresent(activeItem);
+    });
+
+    // Pause video when leaving the item
+    carousel.on('slide.bs.carousel', function () {
+        var activeItem = $(this).find('.carousel-item.active');
+        var video = activeItem.find('video')[0];
+        if (video) {
+            video.pause();
+        }
+    });
+
     carousel.on('mouseleave', function () {
         carousel.carousel('cycle');
     });
-    
 }
 
 $(document).ready(function () {
@@ -559,7 +596,7 @@ $(document).ready(function () {
             } else {
                 $(modal).find('.modal-body').scrollTop(0);
             }
-        }, 100);
+        }, 150);
     }
 
     $('#portfolioModal').on('show.bs.modal', function () {
