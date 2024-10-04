@@ -524,6 +524,15 @@ h6 {
     display: none;
 }
 
+.fa-play::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #fff;
+}
+
 
 /* Mobile Nav body classes */
 
