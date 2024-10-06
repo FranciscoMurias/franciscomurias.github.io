@@ -57,9 +57,14 @@ jQuery(document).ready(function($) {
         var typed = new Typed('.text-slider', {
             strings: typed_strings.split(','),
             typeSpeed: 20,
-            loop: true,
+            loop: false,
             backDelay: 1100,
-            backSpeed: 10
+            backSpeed: 10,
+            showCursor: true,
+            cursorChar: '|',
+            onComplete: function (self) {
+                self.cursor.style.display = 'none';
+            }
         });
     }
 
@@ -363,7 +368,7 @@ const games = [
         award: 'Honorable Mention',
         description: 'Game developed for the Porto Graphics Game Jam 2016 developed in Unity in 32 hours. \nHonorable mention Winner for Creativity and Adaptation to theme.',
         downloadLink: './assets/Displaced.rar'
-    },
+    }
 ];
 
 //specialty links
@@ -519,7 +524,7 @@ $('#portfolioModal').on('show.bs.modal', function () {
     var modal = this;
     $(this).find('.modal-body').load(`img/${this.dataset.type}/${this.dataset.portfolio}/${this.dataset.portfolio}.html`, function () {
         $(this).find('.modal-title').text(modal.dataset.title);
-
+        
         // Apply custom behavior to carousel after content is loaded
         customizeCarousel(modal);
     });
