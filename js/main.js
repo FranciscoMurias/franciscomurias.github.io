@@ -276,7 +276,7 @@ const games = [
     {
         title: 'BendingSpacetime',
         mainImage: 'img/games/BendingSpacetime/thumbnail.png',
-        video: 'img/games/BendingSpacetime/video1.webm',
+        video: 'img/games/BendingSpacetime/video1.mp4',
         sideImages: ['img/games/BendingSpacetime/thumbnail.png', 'img/games/res/mnj20.png'],
         year: 2020,
         award: '',
